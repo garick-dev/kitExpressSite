@@ -1,0 +1,31 @@
+/*//////////////////////////////////////////////*/
+/*///////////////////////ORDER//////////////////*/
+/*//////////////////////////////////////////////*/
+.order {
+    position: relative;
+    margin-top: 45px;
+    background-color: #ffffff;
+    padding: 25px 40px;
+    box-shadow: -1px 1px 6px rgba(13, 9, 3, 0.25);
+    border-radius: 3px;
+    overflow: hidden;
+}
+.order__arrow {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+}
+
+.order__info {
+    display: flex;
+    flex-direction: column;
+}
+.order__info > .subtitle {
+    margin-bottom: 20px;
+}
+
+.order__status {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+}

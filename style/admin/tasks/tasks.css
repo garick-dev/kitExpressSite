@@ -1,0 +1,121 @@
+.tasks__wrapper {
+    margin-top: 40px;
+    display: flex;
+}
+
+.tasks__left-side {
+    max-width: 1450px;
+    width: 100%;
+}
+
+.tasks__block {
+    padding: 45px 40px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: -1px 1px 6px rgba(13, 9, 3, 0.25);
+    border-radius: 3px;
+}
+
+.tasks__title {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.tasks__user {
+    display: flex;
+    margin: 40px 0;
+}
+
+.tasks__avatar {
+    margin-right: 25px;
+}
+
+.tasks__info {
+    display: flex;
+    flex-direction: column;
+}
+.tasks__info > .tasks__row > .tasks__column:first-of-type {
+    margin-right: 65px;
+}
+
+.text_tasks__text_grey {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    color: #828282;
+}
+
+.tasks__row {
+    display: flex;
+}
+
+.tasks__column {
+    display: flex;
+    flex-direction: column;
+}
+.tasks__column > .tasks__subtitle {
+    margin-bottom: 15px;
+}
+.tasks__subtitle {
+    font-family: "Montserrat-Regular", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--grey);
+}
+
+.tasks__images {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.tasks__image {
+    margin-top: 20px;
+    margin-right: 15px;
+    max-width: 80px;
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+
+.tasks__image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+.tasks__image svg{
+    fill: #0D0903;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    max-width: 9px;
+    width: 100%;
+    height: 9px;
+}
+
+.tasks__button {
+    max-width: 420px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 26px;
+    font-family: "OpenSans-Bold", sans-serif;
+    color: #ffffff;
+    background-color: var(--yellow);
+    border-radius: 3px;
+    transition: 0.2s ease-in;
+}
+.tasks__button:hover {
+    filter: drop-shadow(-1px 1px 6px rgba(13, 9, 3, 0.25));
+    outline: 1px solid #ffffff;
+    cursor: pointer;
+}
+
+.tasks__right-side {
+    margin-left: 50px;
+    max-width: 720px;
+    width: 100%;
+}
+
+.tasks__buttons {
+    display: flex;
+}

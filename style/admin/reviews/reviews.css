@@ -1,0 +1,28 @@
+.reviews__wrapper {
+    display: flex;
+}
+.reviews__left-side {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+.reviews__right-side {
+    max-width: 720px;
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.reviews__buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.reviews__buttons > .button__grey {
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.reviews__buttons > .button__grey:last-of-type{
+    margin-right: 0;
+    margin-bottom: 0;
+}

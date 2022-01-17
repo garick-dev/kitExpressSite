@@ -1,0 +1,31 @@
+.statistic-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.statistic-inner__row {
+    margin-top: 130px;
+    display: flex;
+}
+.statistic-inner__row > .delivery__post-info {
+    margin-left: 75px;
+}
+.statistic-inner__row > .delivery__post-info:first-of-type {
+    margin-left: 0;
+}
+.statistic-inner__chart {
+    margin-top: 100px;
+}
+
+.statistic-inner__right-side {
+    margin-top: 30px;
+    margin-right: 70px;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.statistic-inner__state {
+    margin-top: 100px;
+}

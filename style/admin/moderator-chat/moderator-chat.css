@@ -1,0 +1,26 @@
+/*//////////////////////////////////////////
+////////////MODERATOR CHAT////////////////
+////////////////////////////////////////////
+ */
+
+.container_moderator-chat {
+    display: flex;
+    margin-top: 40px;
+}
+
+.user-block_moderator-chat:not(:last-of-type) {
+    margin-bottom: 30px;
+}
+.moderator-chat__left {
+    display: flex;
+    flex-direction: column;
+}
+.moderator-chat__right {
+    margin-left: 40px;
+    display: flex;
+    width: 100%;
+}
+.user-block_moderator-chat:hover {
+    cursor: pointer;
+    background-color: #FFFAED;
+}

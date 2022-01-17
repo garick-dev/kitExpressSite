@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../../../style/fonts.css">
+    <link rel="stylesheet" href="../../../../../style/normalize.css">
+    <link rel="stylesheet" href="../../../../../style/admin/global/control-panel.css">
+    <link rel="stylesheet" href="../../../../../style/admin/global/main.css">
+    <link rel="stylesheet" href="../../../../../style/admin/global/search.css">
+    <link rel="stylesheet" href="../../../../../style/admin/global/orders.css">
+    <link rel="stylesheet" href="../../../../../style/admin/global/navigation.css">
+    <link rel="stylesheet" href='../../../../../style/admin/database/customers/customers-list.css'>
+
+    <link rel="stylesheet" href="../../../../../style/noUiSlider/nouislider.min.css">
+    <script src="../../../../../js/noUiSlider/nouislider.min.js"></script>
+    <script src="../../../../../js/admin/search.js"></script>
+
+    <title>База покупателей</title>
+
+</head>
+<body>
+<aside class="control-panel">
+
+    <div class="control-panel__header">
+        <a href="#" class="title title_control-panel">
+            KitExpress
+        </a>
+    </div>
+    <span class="control-panel__text control-panel__text_white control-panel__text_white-padding">Рабочее пространство</span>
+
+
+    <a href="#" class="control-panel__item">
+        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.1668 0.75H0.833496V6.25H1.75016V16.3333C1.75016 17.3463 2.57058 18.1667 3.5835 18.1667H16.4168C17.4297 18.1667 18.2502 17.3463 18.2502 16.3333V6.25H19.1668V0.75ZM2.66683 2.58333H17.3335V4.41667H2.66683V2.58333ZM16.4168 16.3333H3.5835V6.25H16.4168V16.3333ZM7.25016 8.08333H12.7502C12.7502 9.09625 11.9297 9.91667 10.9168 9.91667H9.0835C8.07058 9.91667 7.25016 9.09625 7.25016 8.08333Z" fill="white"/>
+        </svg>
+        <span class="control-panel__subtitle control-panel__subtitle_link">Акции и цены</span>
+    </a>
+    <div class="control-panel__column">
+        <a href="../seller-page.html" class="control-panel__item">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.9342 8.47047L17.4342 3.47047C17.3283 3.25867 17.1119 3.12504 16.8751 3.12504H14.375V1.24996C14.375 0.904805 14.0952 0.625 13.75 0.625H6.24998C5.90482 0.625 5.62498 0.904805 5.62498 1.24996V3.125H3.12498C2.88814 3.125 2.67177 3.25863 2.56588 3.47043L0.0658768 8.47043C-0.0308811 8.66422 -0.0204904 8.89434 0.0933377 9.07863C0.207166 9.2627 0.408299 9.375 0.624978 9.375H1.87502V18.75C1.87502 19.0952 2.15482 19.375 2.49998 19.375H10.625H15H17.5C17.8452 19.375 18.125 19.0952 18.125 18.75V9.375H19.375C19.5917 9.375 19.7928 9.2627 19.9066 9.07867C20.0205 8.89434 20.0309 8.66422 19.9342 8.47047ZM6.87502 1.875H13.125V3.125H6.87502V1.875ZM12.012 4.375L12.9495 8.125H7.05056L7.98806 4.375H12.012ZM3.51135 4.375H6.25002H6.69947L5.76197 8.125H2.49998H1.63635L3.51135 4.375ZM11.25 18.125V12.5H14.375V18.125H11.25ZM16.875 18.125H15.625V11.875C15.625 11.5298 15.3452 11.25 15.0001 11.25H10.625C10.2799 11.25 10 11.5298 10 11.875V18.125H3.12502V9.375H16.875V18.125ZM17.5001 8.125H14.2381L13.3006 4.375H13.75H16.4887L18.3637 8.125H17.5001Z" fill="#ffffff"/>
+            </svg>
+            <span class="control-panel__subtitle control-panel__subtitle_link">Мой магазин</span>
+            <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.57143 3.0664e-08L9 6.25L15.4286 1.83984e-07L18 1.25L9 10L1.04343e-07 1.25L2.57143 3.0664e-08Z" fill="#F9F9F9"/>
+            </svg>
+        </a>
+        <a href="./my-products.html" class="control-panel__text control-panel__drop-down">
+            Мои товары
+        </a>
+        <a href="return-customers.html" class="control-panel__text control-panel__drop-down">
+            Возвраты клиентов
+        </a>
+    </div>
+
+    <a href="#" class="control-panel__item">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_44_211)">
+                <path d="M11.7085 11.709C13.0202 11.709 14.0835 10.6457 14.0835 9.33398C14.0835 8.02231 13.0202 6.95898 11.7085 6.95898C10.3968 6.95898 9.3335 8.02231 9.3335 9.33398C9.3335 10.6457 10.3968 11.709 11.7085 11.709Z" fill="white"/>
+                <path d="M11.7081 11.709C9.66778 11.709 8.01367 13.3629 8.01367 15.4034H15.4025C15.4025 13.3629 13.7484 11.709 11.7081 11.709Z" fill="white"/>
+                <path d="M21.7681 20.6483L18.398 17.2782C19.6577 15.7675 20.4167 13.8255 20.4167 11.7094C20.4167 6.90766 16.5101 3.0011 11.7083 3.0011C6.90656 3.0011 3 6.9076 3 11.7094C3 16.5113 6.90656 20.4178 11.7083 20.4178C13.8251 20.4178 15.7677 19.6582 17.2786 18.3979L20.6486 21.7679C20.8032 21.9225 21.0058 21.9998 21.2083 21.9998C21.4109 21.9998 21.6136 21.9225 21.7681 21.7679C22.0773 21.4587 22.0773 20.9575 21.7681 20.6483ZM4.58333 11.7094C4.58333 7.78071 7.77961 4.58443 11.7083 4.58443C15.6371 4.58443 18.8333 7.78071 18.8333 11.7094C18.8333 15.6382 15.6371 18.8344 11.7083 18.8344C7.77961 18.8344 4.58333 15.6382 4.58333 11.7094Z" fill="white"/>
+            </g>
+            <defs>
+                <clipPath id="clip0_44_211">
+                    <rect width="19" height="19" fill="white" transform="translate(3 3)"/>
+                </clipPath>
+            </defs>
+        </svg>
+        <span class="control-panel__subtitle control-panel__subtitle_link">Чат с покупателем</span>
+    </a>
+    <a href="#" class="control-panel__item">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_44_211)">
+                <path d="M11.7085 11.709C13.0202 11.709 14.0835 10.6457 14.0835 9.33398C14.0835 8.02231 13.0202 6.95898 11.7085 6.95898C10.3968 6.95898 9.3335 8.02231 9.3335 9.33398C9.3335 10.6457 10.3968 11.709 11.7085 11.709Z" fill="white"/>
+                <path d="M11.7081 11.709C9.66778 11.709 8.01367 13.3629 8.01367 15.4034H15.4025C15.4025 13.3629 13.7484 11.709 11.7081 11.709Z" fill="white"/>
+                <path d="M21.7681 20.6483L18.398 17.2782C19.6577 15.7675 20.4167 13.8255 20.4167 11.7094C20.4167 6.90766 16.5101 3.0011 11.7083 3.0011C6.90656 3.0011 3 6.9076 3 11.7094C3 16.5113 6.90656 20.4178 11.7083 20.4178C13.8251 20.4178 15.7677 19.6582 17.2786 18.3979L20.6486 21.7679C20.8032 21.9225 21.0058 21.9998 21.2083 21.9998C21.4109 21.9998 21.6136 21.9225 21.7681 21.7679C22.0773 21.4587 22.0773 20.9575 21.7681 20.6483ZM4.58333 11.7094C4.58333 7.78071 7.77961 4.58443 11.7083 4.58443C15.6371 4.58443 18.8333 7.78071 18.8333 11.7094C18.8333 15.6382 15.6371 18.8344 11.7083 18.8344C7.77961 18.8344 4.58333 15.6382 4.58333 11.7094Z" fill="white"/>
+            </g>
+            <defs>
+                <clipPath id="clip0_44_211">
+                    <rect width="19" height="19" fill="white" transform="translate(3 3)"/>
+                </clipPath>
+            </defs>
+        </svg>
+        <span class="control-panel__subtitle control-panel__subtitle_link">Чат с модератором</span>
+    </a>
+
+    <a href="#" class="control-panel__item">
+        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.2042 2.91142H13.8885V2.06403C13.8885 1.62091 13.5231 1.25552 13.08 1.25552H10.3318V0.808511C10.3318 0.365385 9.96644 0 9.52331 0C9.08019 0 8.7148 0.365385 8.7148 0.808511V1.25164H5.96275C5.51963 1.25164 5.15424 1.61702 5.15424 2.06015V2.90753H1.79582C1.35269 2.90753 0.987305 3.27291 0.987305 3.71604V18.1915C0.987305 18.6346 1.35269 19 1.79582 19H17.243C17.6473 19 18.0127 18.6346 18.0127 18.1915V3.71993C18.0127 3.2768 17.6473 2.91142 17.2042 2.91142ZM6.77127 2.82979H12.3103V4.61007H6.77127V2.82979ZM16.4345 17.4296H2.60433V4.52844H5.15036V5.37582C5.15036 5.81894 5.51574 6.18433 5.95887 6.18433H13.0761C13.5192 6.18433 13.8846 5.81894 13.8846 5.41469V4.52844H16.4306V17.4296H16.4345Z" fill="white"/>
+        </svg>
+
+
+
+        <span class="control-panel__subtitle control-panel__subtitle_link">Мои задания</span>
+    </a>
+    <a href="#" class="control-panel__item">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.0095 14.7692L0 18V0.923077C0 0.678262 0.0948211 0.443473 0.263604 0.270363C0.432387 0.0972524 0.661305 0 0.9 0H17.1C17.3387 0 17.5676 0.0972524 17.7364 0.270363C17.9052 0.443473 18 0.678262 18 0.923077V13.8462C18 14.091 17.9052 14.3258 17.7364 14.4989C17.5676 14.672 17.3387 14.7692 17.1 14.7692H4.0095ZM1.8 14.2015L3.3867 12.9231H16.2V1.84615H1.8V14.2015ZM8.1 9.23077H9.9V11.0769H8.1V9.23077ZM8.1 3.69231H9.9V8.30769H8.1V3.69231Z" fill="white"/>
+        </svg>
+
+        <span class="control-panel__subtitle control-panel__subtitle_link">Отзывы</span>
+    </a>
+
+    <div class="control-panel__column">
+        <a href="#" class="control-panel__item control-panel__item_margin">
+            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.87868 0.87868C0 1.75736 0 3.17157 0 6V12C0 14.8284 0 16.2426 0.87868 17.1213C1.75736 18 3.17157 18 6 18H14C16.8284 18 18.2426 18 19.1213 17.1213C20 16.2426 20 14.8284 20 12V6C20 3.17157 20 1.75736 19.1213 0.87868C18.2426 0 16.8284 0 14 0H6C3.17157 0 1.75736 0 0.87868 0.87868ZM14 5C14.5523 5 15 5.44772 15 6V14C15 14.5523 14.5523 15 14 15C13.4477 15 13 14.5523 13 14V6C13 5.44772 13.4477 5 14 5ZM7 8C7 7.44772 6.55228 7 6 7C5.44772 7 5 7.44772 5 8V14C5 14.5523 5.44772 15 6 15C6.55229 15 7 14.5523 7 14V8ZM11 10C11 9.44772 10.5523 9 10 9C9.44772 9 9 9.44772 9 10V14C9 14.5523 9.44772 15 10 15C10.5523 15 11 14.5523 11 14V10Z" fill="white"/>
+            </svg>
+            <span class="control-panel__subtitle control-panel__subtitle_link">Статистика</span>
+            <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.57143 3.0664e-08L9 6.25L15.4286 1.83984e-07L18 1.25L9 10L1.04343e-07 1.25L2.57143 3.0664e-08Z" fill="#F9F9F9"/>
+            </svg>
+
+        </a>
+        <a href="#" class="control-panel__text control-panel__drop-down">
+            Общая статистика
+        </a>
+        <a href="#" class="control-panel__text control-panel__drop-down">
+            Рекламация
+        </a>
+        <a href="#" class="control-panel__text control-panel__drop-down">
+            Товары
+        </a>
+        <a href="#" class="control-panel__text control-panel__drop-down control-panel__drop-down_mb-10">
+            Услуги
+        </a>
+    </div>
+
+    <div class="control-panel__column">
+        <a href="#" class="control-panel__item ">
+            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.87868 0.87868C0 1.75736 0 3.17157 0 6V12C0 14.8284 0 16.2426 0.87868 17.1213C1.75736 18 3.17157 18 6 18H14C16.8284 18 18.2426 18 19.1213 17.1213C20 16.2426 20 14.8284 20 12V6C20 3.17157 20 1.75736 19.1213 0.87868C18.2426 0 16.8284 0 14 0H6C3.17157 0 1.75736 0 0.87868 0.87868ZM14 5C14.5523 5 15 5.44772 15 6V14C15 14.5523 14.5523 15 14 15C13.4477 15 13 14.5523 13 14V6C13 5.44772 13.4477 5 14 5ZM7 8C7 7.44772 6.55228 7 6 7C5.44772 7 5 7.44772 5 8V14C5 14.5523 5.44772 15 6 15C6.55229 15 7 14.5523 7 14V8ZM11 10C11 9.44772 10.5523 9 10 9C9.44772 9 9 9.44772 9 10V14C9 14.5523 9.44772 15 10 15C10.5523 15 11 14.5523 11 14V10Z" fill="white"/>
+            </svg>
+            <span class="control-panel__subtitle control-panel__subtitle_link">Чёрный список</span>
+            <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.57143 3.0664e-08L9 6.25L15.4286 1.83984e-07L18 1.25L9 10L1.04343e-07 1.25L2.57143 3.0664e-08Z" fill="#F9F9F9"/>
+            </svg>
+
+        </a>
+        <a href="#" class="control-panel__text control-panel__drop-down">
+            Продавцы
+        </a>
+        <a href="#" class="control-panel__text control-panel__drop-down">
+            Грузоперевозки
+        </a>
+        <a href="#" class="control-panel__text control-panel__drop-down">
+            Магазины
+        </a>
+        <a href="#" class="control-panel__text control-panel__drop-down">
+            Исполнители
+        </a>
+        <a href="#" class="control-panel__text control-panel__drop-down">
+            Люди
+        </a>
+        <a href="#" class="control-panel__text control-panel__drop-down control-panel__drop-down_mb-25">
+            Техника
+        </a>
+    </div>
+
+    <span class="control-panel__text control-panel__text_white control-panel__text_white-padding">База данных</span>
+    <a href="#" class="control-panel__item control-panel__item_different">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.7956 20.7059C17.4537 19.6427 16.7004 18.7033 15.6526 18.0332C14.6047 17.3632 13.3208 17 12 17C10.6792 17 9.3953 17.3632 8.34743 18.0332C7.29957 18.7033 6.5463 19.6427 6.20445 20.7059" stroke="white" stroke-width="2"/>
+            <circle cx="12" cy="10" r="3" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <rect x="3" y="3" width="18" height="18" rx="3" stroke="white" stroke-width="2"/>
+        </svg>
+        <span class="control-panel__subtitle control-panel__subtitle_link">Покупатели</span>
+    </a>
+    <a href="#" class="control-panel__item control-panel__item_different">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.7956 20.7059C17.4537 19.6427 16.7004 18.7033 15.6526 18.0332C14.6047 17.3632 13.3208 17 12 17C10.6792 17 9.3953 17.3632 8.34743 18.0332C7.29957 18.7033 6.5463 19.6427 6.20445 20.7059" stroke="white" stroke-width="2"/>
+            <circle cx="12" cy="10" r="3" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <rect x="3" y="3" width="18" height="18" rx="3" stroke="white" stroke-width="2"/>
+        </svg>
+        <span class="control-panel__subtitle control-panel__subtitle_link">Все товары</span>
+    </a>
+
+    <div class="add-product">
+        <a href="#" class="add-product__image">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.43359 7.58203H0.769531V5.49609H5.43359V0.714844H7.54297V5.49609H12.2188V7.58203H7.54297V12.3398H5.43359V7.58203Z" fill="#F49613"/>
+            </svg>
+        </a>
+        <a href="#" class="control-panel__subtitle control-panel__subtitle_link add-product__link">Добавить товар</a>
+    </div>
+
+    <div class="control-panel__user">
+        <div class="control-panel__avatar">
+            Р
+        </div>
+        <div class="control-panel__user-info">
+                    <span class="control-panel__text control-panel__text_white control-panel__user-group">
+                        Продавец
+                    </span>
+            <span class="control-panel__text control-panel__name">Роман М.</span>
+            <a href="" class="control-panel__edit">Редактировать</a>
+        </div>
+    </div>
+</aside>
+
+<section class="content__outer">
+    <div class="content__inner">
+        <form action="" class="search">
+            <div class="search__input">
+                <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 19L13.9862 14.7425L18 19ZM16.2105 9.05263C16.2105 11.1883 15.4093 13.2365 13.983 14.7467C12.5567 16.2569 10.6223 17.1053 8.60526 17.1053C6.58822 17.1053 4.65379 16.2569 3.22753 14.7467C1.80127 13.2365 1 11.1883 1 9.05263C1 6.91694 1.80127 4.86872 3.22753 3.35856C4.65379 1.8484 6.58822 1 8.60526 1C10.6223 1 12.5567 1.8484 13.983 3.35856C15.4093 4.86872 16.2105 6.91694 16.2105 9.05263V9.05263Z" stroke="#F49613" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <input type="text" name="search" placeholder="Поиск">
+            </div>
+            <div class="filter">
+                <div class="search__select">
+                    <div class="filter__option">
+                        <span class="search__text">Фильтровать</span>
+                        <div class="search__arrow">
+                            <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.57143 3.0664e-08L9 6.25L15.4286 1.83984e-07L18 1.25L9 10L1.04343e-07 1.25L2.57143 3.0664e-08Z" fill="#ffffff"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter__inner hide">
+                    <div class="filter__edit">
+                        <span class="search__text">Цена</span>
+                        <div class="filter__row">
+                            <div class="filter__input">
+                                <input class="search__text" type="number" min="0" max="64243" value="0" id="filter__price_min">
+                                <label for="filter__price_min" class="filter__label search__text_grey">от</label>
+                            </div>
+                            <div class="filter__input">
+                                <input class="search__text" type="number" min="0" max="64243" value="64243" id="filter__price_max">
+                                <label for="filter__price_max" class="filter__label search__text_grey">до</label>
+                            </div>
+                        </div>
+                        <div class="filter__range-slider filter__price-slider"></div>
+                    </div>
+                    <div class="filter__edit">
+                        <span class="search__text">Вес, кг</span>
+                        <div class="filter__row">
+                            <div class="filter__input">
+                                <input class="search__text" type="number" min="2" max="40223" value="0" id="filter__weight_min">
+                                <label for="filter__weight_min" class="filter__label search__text_grey">от</label>
+                            </div>
+                            <div class="filter__input">
+                                <input class="search__text" type="number" min="2" max="40223" value="40223" id="filter__weight_max">
+                                <label for="filter__weight_max" class="filter__label search__text_grey">до</label>
+                            </div>
+                        </div>
+                        <div class="filter__range-slider filter__weight-slider"></div>
+                    </div>
+                    <div class="filter__row">
+                        <div class="filter__checkbox">
+                            <label for="action-product" class="search__text">Товар по акции</label>
+                            <input type="checkbox" id="action-product" >
+                            <label for="action-product" class="filter__fake-checkbox"></label>
+                        </div>
+                        <div class="filter__checkbox">
+                            <label for="high-rating" class="search__text">Высокий рейтинг</label>
+                            <input type="checkbox" id="high-rating">
+                            <label for="high-rating" class="filter__fake-checkbox"></label>
+                        </div>
+                    </div>
+                    <div class="filter__category">
+                        <span class="search__text">Категория</span>
+                        <div class="filter__subcategory">
+                            <span class="search__text">Категория 1</span>
+                            <span class="search__text">Категория 2</span>
+                            <span class="search__text">Категория 3</span>
+                            <span class="search__text">Категория 4</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="search__select search__text">
+                <select onfocus='this.size=8;' onchange="this.size=1">
+                    <option class="search__text"  disabled selected >Сортировать по</option>
+                    <option class="search__text">Популярные</option>
+                    <option class="search__text">Новинки</option>
+                    <option class="search__text">Сначала дешевые</option>
+                    <option class="search__text">Сначала дорогие</option>
+                    <option class="search__text">Сначала новые</option>
+                    <option class="search__text">Сначала старые</option>
+                    <option class="search__text">Высокий рейтинг</option>
+                </select>
+                <div class="search__arrow">
+                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.57143 3.0664e-08L9 6.25L15.4286 1.83984e-07L18 1.25L9 10L1.04343e-07 1.25L2.57143 3.0664e-08Z" fill="#ffffff"/>
+                    </svg>
+
+                </div>
+            </div>
+        </form>
+        <div class="container orders">
+            <div class="orders__header">
+                <div class="orders__left">
+                    <div class="orders__info">
+
+                    </div>
+                    <div class="orders__status orders__header_text">Категория заказа</div>
+                    <div class="orders__status orders__header_text">Номер заказа</div>
+                </div>
+                <div class="orders__right">
+                    <div class="orders__coast orders__header_text">Заказ на сумму</div>
+                    <div class="orders__date orders__header_text">Дата добавления</div>
+
+                </div>
+            </div>
+            <hr class="line line_orders">
+            <a href="customer-card.html" class="orders__row">
+                <div class="orders__left">
+                    <div class="orders__info">
+                        <div class="orders__image">
+                            <img src="../../../../../image/account/avatar.png" alt="">
+                        </div>
+                        <div class="orders__column">
+                            <span class="orders__title">
+                                Елена Сипягина
+                            </span>
+                        </div>
+                    </div>
+                    <div class="text text_orders orders__status">Плитка</div>
+                    <div class="text text_orders orders__status">#237u21301</div>
+                </div>
+                <div class="orders__right">
+
+                    <div class="text text_orders orders__coast">20 999 &#8381;</div>
+                    <div class="orders__date">
+                        <span class="text text_orders">Май 26, 2021</span>
+                        <span class="orders__small-text">6:30 </span>
+                    </div>
+                </div>
+            </a>
+            <hr class="line">
+            <a href="customer-card.html" class="orders__row">
+                <div class="orders__left">
+                    <div class="orders__info">
+                        <div class="orders__image">
+                            <img src="../../../../../image/account/avatar.png" alt="">
+                        </div>
+                        <div class="orders__column">
+                            <span class="orders__title">
+                                Елена Сипягина
+                            </span>
+                        </div>
+                    </div>
+                    <div class="text text_orders orders__status">Плитка</div>
+                    <div class="text text_orders orders__status">#237u21301</div>
+                </div>
+                <div class="orders__right">
+
+                    <div class="text text_orders orders__coast">20 999 &#8381;</div>
+                    <div class="orders__date">
+                        <span class="text text_orders">Май 26, 2021</span>
+                        <span class="orders__small-text">6:30 </span>
+                    </div>
+                </div>
+            </a>
+            <hr class="line">
+
+
+            <div class="navigation">
+                <div class="navigation__left">
+                    <span class="text text_navigation">
+                        Столбцы на страницу:
+                    </span>
+                    <div class="navigation__column-count">
+                        <select name="" id="">
+                            <option value="">8</option>
+                            <option value="">12</option>
+                            <option value="">16</option>
+                        </select>
+                        <div class="navigation__arrow_down">
+                            <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.57143 3.0664e-08L9 6.25L15.4286 1.83984e-07L18 1.25L9 10L1.04343e-07 1.25L2.57143 3.0664e-08Z" fill="#000000"/>
+                            </svg>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="navigation__right">
+                    <span class="text text_navigation">
+                       1-8 of 64
+                    </span>
+                    <div class="navigation__arrows">
+                        <div class="navigation__arrow_left">
+                            <svg width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 3.57143L5.25 12.5L14 21.4286L12.25 25L0 12.5L12.25 0L14 3.57143Z" fill="#000000"/>
+                            </svg>
+
+                        </div>
+                        <div class="navigation__arrow_right">
+                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M-2.24801e-07 15.4286L6.25 9L-1.34881e-06 2.57143L1.25 7.64949e-07L10 9L1.25 18L-2.24801e-07 15.4286Z" fill="#000000"/>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+</body>

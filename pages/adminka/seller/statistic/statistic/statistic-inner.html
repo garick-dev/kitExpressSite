@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../../../style/fonts.css">
+    <link rel="stylesheet" href="../../../../../style/normalize.css">
+    <link rel="stylesheet" href="../../../../../style/admin/global/control-panel.css">
+    <link rel="stylesheet" href="../../../../../style/admin/global/main.css">
+    <link rel="stylesheet" href="../../../../../style/admin/global/back.css">
+    <link rel="stylesheet" href="../../../../../style/admin/global/delivery.css">
+    <link rel="stylesheet" href="../../../../../style/admin/global/product-card-slider.css">
+    <link rel="stylesheet" href="../../../../../style/admin/global/product-card-tabs.css">
+    <link rel="stylesheet" href="../../../../../style/admin/global/product-card-edit.css">
+    <link rel="stylesheet" href="../../../../../style/admin/my-shop/my-products/product-card.css">
+    <link rel="stylesheet" href="../../../../../style/admin/statistic/statistic/statistic-inner.css">
+
+    <script src="../../../../../js/glide/dist/glide.min.js"></script>
+    <script src="../../../../../js/admin/product-card.js"></script>
+    <title>Статистика внутри</title>
+
+</head>
+<body>
+<aside class="control-panel">
+
+    <div class="control-panel__header">
+        <a href="#" class="title title_control-panel">
+            KitExpress
+        </a>
+    </div>
+    <span class="control-panel__text control-panel__text_white control-panel__text_white-padding">Рабочее пространство</span>
+
+
+    <a href="#" class="control-panel__item">
+        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.1668 0.75H0.833496V6.25H1.75016V16.3333C1.75016 17.3463 2.57058 18.1667 3.5835 18.1667H16.4168C17.4297 18.1667 18.2502 17.3463 18.2502 16.3333V6.25H19.1668V0.75ZM2.66683 2.58333H17.3335V4.41667H2.66683V2.58333ZM16.4168 16.3333H3.5835V6.25H16.4168V16.3333ZM7.25016 8.08333H12.7502C12.7502 9.09625 11.9297 9.91667 10.9168 9.91667H9.0835C8.07058 9.91667 7.25016 9.09625 7.25016 8.08333Z" fill="white"/>
+        </svg>
+        <span class="control-panel__subtitle control-panel__subtitle_link">Акции и цены</span>
+    </a>
+    <div class="control-panel__column">
+        <a href="../seller-page.html" class="control-panel__item">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.9342 8.47047L17.4342 3.47047C17.3283 3.25867 17.1119 3.12504 16.8751 3.12504H14.375V1.24996C14.375 0.904805 14.0952 0.625 13.75 0.625H6.24998C5.90482 0.625 5.62498 0.904805 5.62498 1.24996V3.125H3.12498C2.88814 3.125 2.67177 3.25863 2.56588 3.47043L0.0658768 8.47043C-0.0308811 8.66422 -0.0204904 8.89434 0.0933377 9.07863C0.207166 9.2627 0.408299 9.375 0.624978 9.375H1.87502V18.75C1.87502 19.0952 2.15482 19.375 2.49998 19.375H10.625H15H17.5C17.8452 19.375 18.125 19.0952 18.125 18.75V9.375H19.375C19.5917 9.375 19.7928 9.2627 19.9066 9.07867C20.0205 8.89434 20.0309 8.66422 19.9342 8.47047ZM6.87502 1.875H13.125V3.125H6.87502V1.875ZM12.012 4.375L12.9495 8.125H7.05056L7.98806 4.375H12.012ZM3.51135 4.375H6.25002H6.69947L5.76197 8.125H2.49998H1.63635L3.51135 4.375ZM11.25 18.125V12.5H14.375V18.125H11.25ZM16.875 18.125H15.625V11.875C15.625 11.5298 15.3452 11.25 15.0001 11.25H10.625C10.2799 11.25 10 11.5298 10 11.875V18.125H3.12502V9.375H16.875V18.125ZM17.5001 8.125H14.2381L13.3006 4.375H13.75H16.4887L18.3637 8.125H17.5001Z" fill="#ffffff"/>
+            </svg>
+            <span class="control-panel__subtitle control-panel__subtitle_link">Мой магазин</span>
+            <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.57143 3.0664e-08L9 6.25L15.4286 1.83984e-07L18 1.25L9 10L1.04343e-07 1.25L2.57143 3.0664e-08Z" fill="#F9F9F9"/>
+            </svg>
+        </a>
+        <a href="my-products.html" class="control-panel__text control-panel__drop-down">
+            Мои товары
+        </a>
+        <a href="../return-customers.html" class="control-panel__text control-panel__drop-down">
+            Возвраты клиентов
+        </a>
+    </div>
+
+    <a href="#" class="control-panel__item">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_44_211)">
+                <path d="M11.7085 11.709C13.0202 11.709 14.0835 10.6457 14.0835 9.33398C14.0835 8.02231 13.0202 6.95898 11.7085 6.95898C10.3968 6.95898 9.3335 8.02231 9.3335 9.33398C9.3335 10.6457 10.3968 11.709 11.7085 11.709Z" fill="white"/>
+                <path d="M11.7081 11.709C9.66778 11.709 8.01367 13.3629 8.01367 15.4034H15.4025C15.4025 13.3629 13.7484 11.709 11.7081 11.709Z" fill="white"/>
+                <path d="M21.7681 20.6483L18.398 17.2782C19.6577 15.7675 20.4167 13.8255 20.4167 11.7094C20.4167 6.90766 16.5101 3.0011 11.7083 3.0011C6.90656 3.0011 3 6.9076 3 11.7094C3 16.5113 6.90656 20.4178 11.7083 20.4178C13.8251 20.4178 15.7677 19.6582 17.2786 18.3979L20.6486 21.7679C20.8032 21.9225 21.0058 21.9998 21.2083 21.9998C21.4109 21.9998 21.6136 21.9225 21.7681 21.7679C22.0773 21.4587 22.0773 20.9575 21.7681 20.6483ZM4.58333 11.7094C4.58333 7.78071 7.77961 4.58443 11.7083 4.58443C15.6371 4.58443 18.8333 7.78071 18.8333 11.7094C18.8333 15.6382 15.6371 18.8344 11.7083 18.8344C7.77961 18.8344 4.58333 15.6382 4.58333 11.7094Z" fill="white"/>
+            </g>
+            <defs>
+                <clipPath id="clip0_44_211">
+                    <rect width="19" height="19" fill="white" transform="translate(3 3)"/>
+                </clipPath>
+            </defs>
+        </svg>
+        <span class="control-panel__subtitle control-panel__subtitle_link">Чат с покупателем</span>
+    </a>
+    <a href="#" class="control-panel__item">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_44_211)">
+                <path d="M11.7085 11.709C13.0202 11.709 14.0835 10.6457 14.0835 9.33398C14.0835 8.02231 13.0202 6.95898 11.7085 6.95898C10.3968 6.95898 9.3335 8.02231 9.3335 9.33398C9.3335 10.6457 10.3968 11.709 11.7085 11.709Z" fill="white"/>
+                <path d="M11.7081 11.709C9.66778 11.709 8.01367 13.3629 8.01367 15.4034H15.4025C15.4025 13.3629 13.7484 11.709 11.7081 11.709Z" fill="white"/>
+                <path d="M21.7681 20.6483L18.398 17.2782C19.6577 15.7675 20.4167 13.8255 20.4167 11.7094C20.4167 6.90766 16.5101 3.0011 11.7083 3.0011C6.90656 3.0011 3 6.9076 3 11.7094C3 16.5113 6.90656 20.4178 11.7083 20.4178C13.8251 20.4178 15.7677 19.6582 17.2786 18.3979L20.6486 21.7679C20.8032 21.9225 21.0058 21.9998 21.2083 21.9998C21.4109 21.9998 21.6136 21.9225 21.7681 21.7679C22.0773 21.4587 22.0773 20.9575 21.7681 20.6483ZM4.58333 11.7094C4.58333 7.78071 7.77961 4.58443 11.7083 4.58443C15.6371 4.58443 18.8333 7.78071 18.8333 11.7094C18.8333 15.6382 15.6371 18.8344 11.7083 18.8344C7.77961 18.8344 4.58333 15.6382 4.58333 11.7094Z" fill="white"/>
+            </g>
+            <defs>
+                <clipPath id="clip0_44_211">
+                    <rect width="19" height="19" fill="white" transform="translate(3 3)"/>
+                </clipPath>
+            </defs>
+        </svg>
+        <span class="control-panel__subtitle control-panel__subtitle_link">Чат с модератором</span>
+    </a>
+
+    <a href="#" class="control-panel__item">
+        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.2042 2.91142H13.8885V2.06403C13.8885 1.62091 13.5231 1.25552 13.08 1.25552H10.3318V0.808511C10.3318 0.365385 9.96644 0 9.52331 0C9.08019 0 8.7148 0.365385 8.7148 0.808511V1.25164H5.96275C5.51963 1.25164 5.15424 1.61702 5.15424 2.06015V2.90753H1.79582C1.35269 2.90753 0.987305 3.27291 0.987305 3.71604V18.1915C0.987305 18.6346 1.35269 19 1.79582 19H17.243C17.6473 19 18.0127 18.6346 18.0127 18.1915V3.71993C18.0127 3.2768 17.6473 2.91142 17.2042 2.91142ZM6.77127 2.82979H12.3103V4.61007H6.77127V2.82979ZM16.4345 17.4296H2.60433V4.52844H5.15036V5.37582C5.15036 5.81894 5.51574 6.18433 5.95887 6.18433H13.0761C13.5192 6.18433 13.8846 5.81894 13.8846 5.41469V4.52844H16.4306V17.4296H16.4345Z" fill="white"/>
+        </svg>
+
+
+
+        <span class="control-panel__subtitle control-panel__subtitle_link">Мои задания</span>
+    </a>
+    <a href="#" class="control-panel__item">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.0095 14.7692L0 18V0.923077C0 0.678262 0.0948211 0.443473 0.263604 0.270363C0.432387 0.0972524 0.661305 0 0.9 0H17.1C17.3387 0 17.5676 0.0972524 17.7364 0.270363C17.9052 0.443473 18 0.678262 18 0.923077V13.8462C18 14.091 17.9052 14.3258 17.7364 14.4989C17.5676 14.672 17.3387 14.7692 17.1 14.7692H4.0095ZM1.8 14.2015L3.3867 12.9231H16.2V1.84615H1.8V14.2015ZM8.1 9.23077H9.9V11.0769H8.1V9.23077ZM8.1 3.69231H9.9V8.30769H8.1V3.69231Z" fill="white"/>
+        </svg>
+
+        <span class="control-panel__subtitle control-panel__subtitle_link">Отзывы</span>
+    </a>
+
+    <div class="control-panel__column">
+        <a href="#" class="control-panel__item control-panel__item_margin">
+            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.87868 0.87868C0 1.75736 0 3.17157 0 6V12C0 14.8284 0 16.2426 0.87868 17.1213C1.75736 18 3.17157 18 6 18H14C16.8284 18 18.2426 18 19.1213 17.1213C20 16.2426 20 14.8284 20 12V6C20 3.17157 20 1.75736 19.1213 0.87868C18.2426 0 16.8284 0 14 0H6C3.17157 0 1.75736 0 0.87868 0.87868ZM14 5C14.5523 5 15 5.44772 15 6V14C15 14.5523 14.5523 15 14 15C13.4477 15 13 14.5523 13 14V6C13 5.44772 13.4477 5 14 5ZM7 8C7 7.44772 6.55228 7 6 7C5.44772 7 5 7.44772 5 8V14C5 14.5523 5.44772 15 6 15C6.55229 15 7 14.5523 7 14V8ZM11 10C11 9.44772 10.5523 9 10 9C9.44772 9 9 9.44772 9 10V14C9 14.5523 9.44772 15 10 15C10.5523 15 11 14.5523 11 14V10Z" fill="white"/>
+            </svg>
+            <span class="control-panel__subtitle control-panel__subtitle_link">Статистика</span>
+            <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.57143 3.0664e-08L9 6.25L15.4286 1.83984e-07L18 1.25L9 10L1.04343e-07 1.25L2.57143 3.0664e-08Z" fill="#F9F9F9"/>
+            </svg>
+
+        </a>
+        <a href="#" class="control-panel__text control-panel__drop-down">
+            Общая статистика
+        </a>
+        <a href="#" class="control-panel__text control-panel__drop-down">
+            Рекламация
+        </a>
+        <a href="#" class="control-panel__text control-panel__drop-down">
+            Товары
+        </a>
+        <a href="#" class="control-panel__text control-panel__drop-down control-panel__drop-down_mb-10">
+            Услуги
+        </a>
+    </div>
+
+    <div class="control-panel__column">
+        <a href="#" class="control-panel__item ">
+            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.87868 0.87868C0 1.75736 0 3.17157 0 6V12C0 14.8284 0 16.2426 0.87868 17.1213C1.75736 18 3.17157 18 6 18H14C16.8284 18 18.2426 18 19.1213 17.1213C20 16.2426 20 14.8284 20 12V6C20 3.17157 20 1.75736 19.1213 0.87868C18.2426 0 16.8284 0 14 0H6C3.17157 0 1.75736 0 0.87868 0.87868ZM14 5C14.5523 5 15 5.44772 15 6V14C15 14.5523 14.5523 15 14 15C13.4477 15 13 14.5523 13 14V6C13 5.44772 13.4477 5 14 5ZM7 8C7 7.44772 6.55228 7 6 7C5.44772 7 5 7.44772 5 8V14C5 14.5523 5.44772 15 6 15C6.55229 15 7 14.5523 7 14V8ZM11 10C11 9.44772 10.5523 9 10 9C9.44772 9 9 9.44772 9 10V14C9 14.5523 9.44772 15 10 15C10.5523 15 11 14.5523 11 14V10Z" fill="white"/>
+            </svg>
+            <span class="control-panel__subtitle control-panel__subtitle_link">Чёрный список</span>
+            <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.57143 3.0664e-08L9 6.25L15.4286 1.83984e-07L18 1.25L9 10L1.04343e-07 1.25L2.57143 3.0664e-08Z" fill="#F9F9F9"/>
+            </svg>
+
+        </a>
+        <a href="#" class="control-panel__text control-panel__drop-down">
+            Продавцы
+        </a>
+        <a href="#" class="control-panel__text control-panel__drop-down">
+            Грузоперевозки
+        </a>
+        <a href="#" class="control-panel__text control-panel__drop-down">
+            Магазины
+        </a>
+        <a href="#" class="control-panel__text control-panel__drop-down">
+            Исполнители
+        </a>
+        <a href="#" class="control-panel__text control-panel__drop-down">
+            Люди
+        </a>
+        <a href="#" class="control-panel__text control-panel__drop-down control-panel__drop-down_mb-25">
+            Техника
+        </a>
+    </div>
+
+    <span class="control-panel__text control-panel__text_white control-panel__text_white-padding">База данных</span>
+    <a href="#" class="control-panel__item control-panel__item_different">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.7956 20.7059C17.4537 19.6427 16.7004 18.7033 15.6526 18.0332C14.6047 17.3632 13.3208 17 12 17C10.6792 17 9.3953 17.3632 8.34743 18.0332C7.29957 18.7033 6.5463 19.6427 6.20445 20.7059" stroke="white" stroke-width="2"/>
+            <circle cx="12" cy="10" r="3" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <rect x="3" y="3" width="18" height="18" rx="3" stroke="white" stroke-width="2"/>
+        </svg>
+        <span class="control-panel__subtitle control-panel__subtitle_link">Покупатели</span>
+    </a>
+    <a href="#" class="control-panel__item control-panel__item_different">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.7956 20.7059C17.4537 19.6427 16.7004 18.7033 15.6526 18.0332C14.6047 17.3632 13.3208 17 12 17C10.6792 17 9.3953 17.3632 8.34743 18.0332C7.29957 18.7033 6.5463 19.6427 6.20445 20.7059" stroke="white" stroke-width="2"/>
+            <circle cx="12" cy="10" r="3" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <rect x="3" y="3" width="18" height="18" rx="3" stroke="white" stroke-width="2"/>
+        </svg>
+        <span class="control-panel__subtitle control-panel__subtitle_link">Все товары</span>
+    </a>
+
+    <div class="add-product">
+        <a href="#" class="add-product__image">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.43359 7.58203H0.769531V5.49609H5.43359V0.714844H7.54297V5.49609H12.2188V7.58203H7.54297V12.3398H5.43359V7.58203Z" fill="#F49613"/>
+            </svg>
+        </a>
+        <a href="#" class="control-panel__subtitle control-panel__subtitle_link add-product__link">Добавить товар</a>
+    </div>
+
+    <div class="control-panel__user">
+        <div class="control-panel__avatar">
+            Р
+        </div>
+        <div class="control-panel__user-info">
+                    <span class="control-panel__text control-panel__text_white control-panel__user-group">
+                        Продавец
+                    </span>
+            <span class="control-panel__text control-panel__name">Роман М.</span>
+            <a href="" class="control-panel__edit">Редактировать</a>
+        </div>
+    </div>
+</aside>
+
+<section class="content__outer">
+    <div class="content__inner ">
+            <div class="statistic-inner">
+                <div class="statistic-inner__left-side">
+                    <div class="back">
+                        <a href="statistic-list.html" class="back__arrow">
+                            <svg width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 3.57143L5.25 12.5L14 21.4286L12.25 25L0 12.5L12.25 0L14 3.57143Z" fill="#0D0903"/>
+                            </svg>
+                        </a>
+                        <a href="statistic-list.html" class="subtitle product-card__subtitle back__text">Черепица гибкая</a>
+                    </div>
+                    <div class="container">
+                        <div class="statistic-inner__chart">
+                            <img src="../../../../../image/admin/statistic.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="statistic-inner__right-side">
+                    <div class="button__grey">
+                        Экспорт таблицы
+                    </div>
+                    <div class="statistic-inner__state">
+                        <img src="../../../../../image/admin/statistic-numbers.png" alt="">
+                    </div>
+                </div>
+            </div>
+        <div class="container">
+            <div class="delivery">
+                <div class="statistic-inner__row">
+                    <div class="delivery__post-info">
+                        <span class="delivery__subtitle">Товарный остаток:</span>
+                        <span class="delivery__text">15 000 шт</span>
+                    </div>
+                    <div class="delivery__post-info">
+                        <span class="delivery__subtitle">Текущие заказы к клиенту:</span>
+                        <span class="delivery__text">20 000 шт</span>
+                    </div>
+                    <div class="delivery__post-info">
+                        <span class="delivery__subtitle">От клиента:</span>
+                        <span class="delivery__text">1 500 шт</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card__content">
+                <div class="product-card__left">
+                    <div class="product-card__slider">
+                        <div class="product-card__share">
+                            <svg width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.125 10.5C2.89294 10.5 2.67038 10.5922 2.50628 10.7563C2.34219 10.9204 2.25 11.1429 2.25 11.375V25.375C2.25 25.6071 2.34219 25.8296 2.50628 25.9937C2.67038 26.1578 2.89294 26.25 3.125 26.25H18.875C19.1071 26.25 19.3296 26.1578 19.4937 25.9937C19.6578 25.8296 19.75 25.6071 19.75 25.375V11.375C19.75 11.1429 19.6578 10.9204 19.4937 10.7563C19.3296 10.5922 19.1071 10.5 18.875 10.5H15.375C15.1429 10.5 14.9204 10.4078 14.7563 10.2437C14.5922 10.0796 14.5 9.85706 14.5 9.625C14.5 9.39294 14.5922 9.17038 14.7563 9.00628C14.9204 8.84219 15.1429 8.75 15.375 8.75H18.875C19.5712 8.75 20.2389 9.02656 20.7312 9.51884C21.2234 10.0111 21.5 10.6788 21.5 11.375V25.375C21.5 26.0712 21.2234 26.7389 20.7312 27.2312C20.2389 27.7234 19.5712 28 18.875 28H3.125C2.42881 28 1.76113 27.7234 1.26884 27.2312C0.776562 26.7389 0.5 26.0712 0.5 25.375V11.375C0.5 10.6788 0.776562 10.0111 1.26884 9.51884C1.76113 9.02656 2.42881 8.75 3.125 8.75H6.625C6.85706 8.75 7.07962 8.84219 7.24372 9.00628C7.40781 9.17038 7.5 9.39294 7.5 9.625C7.5 9.85706 7.40781 10.0796 7.24372 10.2437C7.07962 10.4078 6.85706 10.5 6.625 10.5H3.125Z" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3806 0.255355C10.4619 0.173869 10.5585 0.10922 10.6648 0.0651082C10.7711 0.0209969 10.885 -0.00170898 11.0001 -0.00170898C11.1152 -0.00170898 11.2292 0.0209969 11.3355 0.0651082C11.4418 0.10922 11.5383 0.173869 11.6196 0.255355L16.8696 5.50536C17.0339 5.66966 17.1262 5.8925 17.1262 6.12486C17.1262 6.35721 17.0339 6.58005 16.8696 6.74436C16.7053 6.90866 16.4825 7.00096 16.2501 7.00096C16.0178 7.00096 15.7949 6.90866 15.6306 6.74436L11.8751 2.98711V18.3749C11.8751 18.6069 11.7829 18.8295 11.6188 18.9936C11.4548 19.1577 11.2322 19.2499 11.0001 19.2499C10.7681 19.2499 10.5455 19.1577 10.3814 18.9936C10.2173 18.8295 10.1251 18.6069 10.1251 18.3749V2.98711L6.36963 6.74436C6.28828 6.82571 6.19169 6.89024 6.0854 6.93427C5.97911 6.9783 5.86518 7.00096 5.75013 7.00096C5.51777 7.00096 5.29493 6.90866 5.13063 6.74436C5.04928 6.663 4.98474 6.56642 4.94071 6.46013C4.89668 6.35383 4.87402 6.23991 4.87402 6.12486C4.87402 5.8925 4.96633 5.66966 5.13063 5.50536L10.3806 0.255355Z" fill="white"/>
+                            </svg>
+
+                        </div>
+                        <div class="product-card__favorite">
+                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5645 2.86902C17.2852 2.30759 16.8825 1.79882 16.379 1.3712C15.875 0.94231 15.2808 0.601475 14.6288 0.367231C13.9526 0.123371 13.2274 -0.0014504 12.4952 1.27149e-05C11.468 1.27149e-05 10.4658 0.244222 9.59485 0.705507C9.38649 0.815853 9.18855 0.937054 9.00103 1.06911C8.81351 0.937054 8.61557 0.815853 8.40721 0.705507C7.53628 0.244222 6.53408 1.27149e-05 5.50688 1.27149e-05C4.76721 1.27149e-05 4.05046 0.123022 3.3733 0.367231C2.71906 0.602396 2.12941 0.940672 1.6231 1.3712C1.11887 1.79834 0.716078 2.30723 0.43755 2.86902C0.147934 3.45332 0 4.07379 0 4.71235C0 5.31473 0.141683 5.94244 0.422965 6.58101C0.658409 7.11465 0.995947 7.66819 1.42725 8.22716C2.11066 9.11174 3.05035 10.0343 4.21715 10.9695C6.1507 12.5198 8.06551 13.5907 8.14677 13.6341L8.64057 13.9091C8.85935 14.0303 9.14063 14.0303 9.35941 13.9091L9.85321 13.6341C9.93447 13.5889 11.8472 12.5198 13.7828 10.9695C14.9496 10.0343 15.8893 9.11174 16.5727 8.22716C17.004 7.66819 17.3437 7.11465 17.577 6.58101C17.8583 5.94244 18 5.31473 18 4.71235C18.0021 4.07379 17.8541 3.45332 17.5645 2.86902ZM9.00103 12.4782C9.00103 12.4782 1.58351 8.35198 1.58351 4.71235C1.58351 2.86902 3.33997 1.37482 5.50688 1.37482C7.02997 1.37482 8.35096 2.11288 9.00103 3.19102C9.65111 2.11288 10.9721 1.37482 12.4952 1.37482C14.6621 1.37482 16.4185 2.86902 16.4185 4.71235C16.4185 8.35198 9.00103 12.4782 9.00103 12.4782Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="product-card__sale">
+                            -35%
+                        </div>
+                        <div class="product-card__price_slider">
+                            <div class="product-card__total-price">
+                                790р
+                            </div>
+                            <div class="product-card__old-price">
+                                1000р
+                            </div>
+                        </div>
+                        <div class="glide product-card__glide-1">
+                            <div data-glide-el="track" class="glide__track">
+                                <ul class="glide__slides">
+                                    <li class="glide__slide"><img src="../../../../../image/account/tile.png" alt=""></li>
+                                    <li class="glide__slide"><img src="../../../../../image/account/tile.png" alt=""></li>
+                                    <li class="glide__slide"><img src="../../../../../image/account/tile.png" alt=""></li>
+                                    <li class="glide__slide"><img src="../../../../../image/account/tile.png" alt=""></li>
+                                    <li class="glide__slide"><img src="../../../../../image/account/tile.png" alt=""></li>
+                                    <li class="glide__slide"><img src="../../../../../image/account/tile.png" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="product-card__bullet">
+                                <div class="glide__bullets" data-glide-el="controls[nav]">
+                                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                                    <button class="glide__bullet" data-glide-dir="=3"></button>
+                                    <button class="glide__bullet glide__bullet_color-2" data-glide-dir="=4"></button>
+                                    <button class="glide__bullet glide__bullet_color-3" data-glide-dir="=5"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card__right">
+                    <div class="product-card__tabs">
+
+                        <input type="radio" name="text" id="description" checked>
+                        <label class="subtitle product-card__subtitle product-card__tab" for="description">Описание</label>
+                        <input type="radio" name="text" id="parameters" >
+                        <label class="subtitle product-card__subtitle product-card__tab" for="parameters">Параметры</label>
+
+                        <div class="product-card__tabs_content">
+                            <div class="description">
+                                <p class="product-card__text">Предназначена для работ общестроительного назначения: многоразового изготовления опалубки  в монолитном железобетонном строительстве, изготовления рекламных щитов и ограждения, тары и упаковки, а также используется в автомобиле -
+                                    и вагоностроении.
+                                </p>
+                                <p class="product-card__text">Облицована с двух сторон пленочным покрытием (бумага, пропитанная синтетической смолой).</p>
+
+                                <p class="product-card__text"> Фанера ламинированная обладает повышенной влагостойкостью, износостойкостью и прочностью, устойчивостью к воздействию химических веществ и других агрессивных сред, устойчивостью к моющим и чистящим моющим средствам.</p>
+
+                                <p class="product-card__text">Листы получают путем склеивания друг с другом тонких слоев березового шпона с помощью водостойкого клея. Каждый слой шпона располагается перпендикулярно друг другу. Наружные слои облицовываются пленочным покрытием (бумагой, пропитанной синтетической смолой), торцы листов покрываются водостойкой акриловой краской.
+                                </p>
+                            </div>
+                            <div class="parameters">
+                                <p class="product-card__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam dolorem doloremque enim eum incidunt iste maxime mollitia, non odit, perspiciatis possimus quia similique suscipit veritatis. Ab aperiam dolorum saepe?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card__row">
+
+                        <div class="product-card__button product-card__button_edit">Редактировать товар</div>
+                        <a href="#" class="product-card__button">Удалить из акции</a>
+                        <a href="#" class="product-card__button">Удалить товар</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card__stock-block">
+                <h3 class="subtitle product-card__subtitle">Акционный товар</h3>
+                <hr class="line line_product-card">
+                <div class="product-card__row">
+                    <span class="subtitle subtitle_regular">Изменить акцию </span>
+                    <input class="subtitle subtitle_regular product-card__input" type="text">
+                    <a href="#" class="product-card__button">Применить</a>
+                </div>
+                <hr class="line line_product-card">
+            </div>
+            <div class="edit hidden">
+                <form class="edit__form">
+                    <div class="edit__left">
+                        <div class="edit__input-outer">
+                            <div class="edit__column">
+                                <label for="category" class="edit__title">Выбор категории:</label>
+                                <input id="category" type="text" class="edit__text" placeholder="Введите текст...">
+                            </div>
+                            <div class="edit__checkbox">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5C6.20101 1.5 1.5 6.20101 1.5 12C1.5 17.799 6.20101 22.5 12 22.5Z" fill="#4CAF50"/>
+                                    <path d="M17.2998 7.2998L10.4998 14.0998L7.6998 11.2998L6.2998 12.6998L10.4998 16.8998L18.6998 8.6998L17.2998 7.2998Z" fill="#CCFF90"/>
+                                </svg>
+
+                            </div>
+                        </div>
+                        <div class="edit__input-outer">
+                            <div class="edit__column">
+                                <label for="name" class="edit__title">Название:</label>
+                                <input id="name" type="text" class="edit__text" placeholder="Введите текст...">
+                            </div>
+                        </div>
+                        <div class="edit__input-outer">
+                            <div class="edit__column">
+                                <label for="price" class="edit__title">Цена:</label>
+                                <input id="price" type="text" class="edit__text" placeholder="Введите текст...">
+                            </div>
+                            <div class="edit__checkbox">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5C6.20101 1.5 1.5 6.20101 1.5 12C1.5 17.799 6.20101 22.5 12 22.5Z" fill="#4CAF50"/>
+                                    <path d="M17.2998 7.2998L10.4998 14.0998L7.6998 11.2998L6.2998 12.6998L10.4998 16.8998L18.6998 8.6998L17.2998 7.2998Z" fill="#CCFF90"/>
+                                </svg>
+
+                            </div>
+                        </div>
+                        <div class="edit__input-outer">
+                            <div class="edit__column">
+                                <label for="city" class="edit__title">Город:</label>
+                                <input id="city" type="text" class="edit__text" placeholder="Введите текст...">
+                            </div>
+                            <div class="edit__checkbox">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5C6.20101 1.5 1.5 6.20101 1.5 12C1.5 17.799 6.20101 22.5 12 22.5Z" fill="#4CAF50"/>
+                                    <path d="M17.2998 7.2998L10.4998 14.0998L7.6998 11.2998L6.2998 12.6998L10.4998 16.8998L18.6998 8.6998L17.2998 7.2998Z" fill="#CCFF90"/>
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edit__right">
+                        <div class="edit__textarea-outer">
+                            <div class="edit__column">
+                                <div class="edit__textarea_header">
+                                    <label class="edit__title" for="edit__description">Описание:</label>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5C6.20101 1.5 1.5 6.20101 1.5 12C1.5 17.799 6.20101 22.5 12 22.5Z" fill="#4CAF50"/>
+                                        <path d="M17.2998 7.2998L10.4998 14.0998L7.6998 11.2998L6.2998 12.6998L10.4998 16.8998L18.6998 8.6998L17.2998 7.2998Z" fill="#CCFF90"/>
+                                    </svg>
+                                </div>
+                                <textarea class="edit__text edit_textarea" name="" id="edit__description" cols="" rows="3" placeholder="Введите описание"></textarea>
+                            </div>
+                        </div>
+                        <div class="edit__textarea-outer">
+                            <div class="edit__column">
+                                <div class="edit__textarea_header">
+                                    <label class="edit__title" for="edit__parameters">Параметры:</label>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5C6.20101 1.5 1.5 6.20101 1.5 12C1.5 17.799 6.20101 22.5 12 22.5Z" fill="#4CAF50"/>
+                                        <path d="M17.2998 7.2998L10.4998 14.0998L7.6998 11.2998L6.2998 12.6998L10.4998 16.8998L18.6998 8.6998L17.2998 7.2998Z" fill="#CCFF90"/>
+                                    </svg>
+                                </div>
+                                <textarea class="edit__text edit_textarea" name="" id="edit__parameters" cols="" rows="3" placeholder="Введите параметры"></textarea>
+                            </div>
+                        </div>
+                        <div class="edit__button_white">
+                            <input type="file" id="file" class="hide">
+                            <label for="file" class="edit__file">Прикрепить фото</label>
+                            <div class="edit__photo">
+                                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.12 2L13.95 4H18V16H2V4H6.05L7.88 2H12.12ZM13 0H7L5.17 2H2C0.9 2 0 2.9 0 4V16C0 17.1 0.9 18 2 18H18C19.1 18 20 17.1 20 16V4C20 2.9 19.1 2 18 2H14.83L13 0ZM10 7C11.65 7 13 8.35 13 10C13 11.65 11.65 13 10 13C8.35 13 7 11.65 7 10C7 8.35 8.35 7 10 7ZM10 5C7.24 5 5 7.24 5 10C5 12.76 7.24 15 10 15C12.76 15 15 12.76 15 10C15 7.24 12.76 5 10 5Z" fill="url(#paint0_linear_413_46560)"/>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_413_46560" x1="0" y1="18" x2="20" y2="18" gradientUnits="userSpaceOnUse">
+                                            <stop offset="0.322579" stop-color="#F49613"/>
+                                            <stop offset="1" stop-color="#FBC41E"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </form>
+                <div class="edit__bottom">
+                    <div class="edit__images">
+                        <div class="edit__single-image">
+                            <img src="../../../../../image/account/tile.png" alt="">
+                        </div>
+                        <div class="edit__single-image">
+                            <img src="../../../../../image/account/tile.png" alt="">
+                        </div>
+                        <div class="edit__single-image">
+                            <img src="../../../../../image/account/tile.png" alt="">
+                        </div>
+                        <div class="edit__single-image">
+                            <img src="../../../../../image/account/tile.png" alt="">
+                        </div>
+                        <div class="edit__single-image">
+                            <img src="../../../../../image/account/tile.png" alt="">
+                        </div>
+                        <div class="edit__single-image">
+                            <img src="../../../../../image/account/tile.png" alt="">
+                        </div>
+                        <div class="edit__single-image">
+                            <img src="../../../../../image/account/tile.png" alt="">
+                        </div>
+                        <div class="edit__single-image">
+                            <img src="../../../../../image/account/tile.png" alt="">
+                        </div>
+                    </div>
+                    <div class="edit__wrapper">
+                        <a href="#" class="edit__button_orange">
+                            Сохранить изменения
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+</section>
+
+</body>
+</html>

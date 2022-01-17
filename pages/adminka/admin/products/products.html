@@ -1,0 +1,945 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../../style/fonts.css">
+    <link rel="stylesheet" href="../../../../style/normalize.css">
+    <link rel="stylesheet" href="../../../../style/admin/global/control-panel.css">
+    <link rel="stylesheet" href="../../../../style/admin/global/main.css">
+    <link rel="stylesheet" href="../../../../style/admin/global/preview-product.css">
+    <link rel="stylesheet" href="../../../../style/admin/global/search.css">
+    <link rel="stylesheet" href="../../../../style/admin/my-shop/my-products/my-product.css">
+
+    <link rel="stylesheet" href="../../../../style/noUiSlider/nouislider.min.css">
+    <script src="../../../../js/noUiSlider/nouislider.min.js"></script>
+    <script src="../../../../js/admin/search.js"></script>
+
+    <script src="../../../../js/glide/dist/glide.min.js"></script>
+    <script src="../../../../js/admin/my-products.js"></script>
+    <title>Товары</title>
+
+</head>
+<body>
+<aside class="control-panel">
+
+    <div class="control-panel__header">
+        <a href="#" class="title title_control-panel">
+            KitExpress
+        </a>
+        <span class="control-panel__subtitle control-panel__subtitle_italic">administrator</span>
+    </div>
+    <span class="control-panel__text control-panel__text_white control-panel__text_white-padding">Рабочее пространство</span>
+
+
+    <a href="#" class="control-panel__item">
+        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.1668 0.75H0.833496V6.25H1.75016V16.3333C1.75016 17.3463 2.57058 18.1667 3.5835 18.1667H16.4168C17.4297 18.1667 18.2502 17.3463 18.2502 16.3333V6.25H19.1668V0.75ZM2.66683 2.58333H17.3335V4.41667H2.66683V2.58333ZM16.4168 16.3333H3.5835V6.25H16.4168V16.3333ZM7.25016 8.08333H12.7502C12.7502 9.09625 11.9297 9.91667 10.9168 9.91667H9.0835C8.07058 9.91667 7.25016 9.09625 7.25016 8.08333Z" fill="white"/>
+        </svg>
+        <span class="control-panel__subtitle control-panel__subtitle_link">Товары</span>
+    </a>
+    <a href="../seller-page.html" class="control-panel__item">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.9342 8.47047L17.4342 3.47047C17.3283 3.25867 17.1119 3.12504 16.8751 3.12504H14.375V1.24996C14.375 0.904805 14.0952 0.625 13.75 0.625H6.24998C5.90482 0.625 5.62498 0.904805 5.62498 1.24996V3.125H3.12498C2.88814 3.125 2.67177 3.25863 2.56588 3.47043L0.0658768 8.47043C-0.0308811 8.66422 -0.0204904 8.89434 0.0933377 9.07863C0.207166 9.2627 0.408299 9.375 0.624978 9.375H1.87502V18.75C1.87502 19.0952 2.15482 19.375 2.49998 19.375H10.625H15H17.5C17.8452 19.375 18.125 19.0952 18.125 18.75V9.375H19.375C19.5917 9.375 19.7928 9.2627 19.9066 9.07867C20.0205 8.89434 20.0309 8.66422 19.9342 8.47047ZM6.87502 1.875H13.125V3.125H6.87502V1.875ZM12.012 4.375L12.9495 8.125H7.05056L7.98806 4.375H12.012ZM3.51135 4.375H6.25002H6.69947L5.76197 8.125H2.49998H1.63635L3.51135 4.375ZM11.25 18.125V12.5H14.375V18.125H11.25ZM16.875 18.125H15.625V11.875C15.625 11.5298 15.3452 11.25 15.0001 11.25H10.625C10.2799 11.25 10 11.5298 10 11.875V18.125H3.12502V9.375H16.875V18.125ZM17.5001 8.125H14.2381L13.3006 4.375H13.75H16.4887L18.3637 8.125H17.5001Z" fill="#ffffff"/>
+            </svg>
+            <span class="control-panel__subtitle control-panel__subtitle_link">Магазины</span>
+        </a>
+    <a href="#" class="control-panel__item">
+        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.1971 17.3696H17.3517V3.84197L18.3988 1.06896C18.5384 0.731547 18.4531 0.0838647 17.6736 0.0218114H12.1043C11.8638 0.0024197 11.1231 0.28166 11.379 1.06896L12.4262 3.84197V8.73643H10.3241C10.2388 6.10692 8.0553 3.97383 5.4064 3.97383C2.7032 3.97383 0.484792 6.19224 0.484792 8.89544V17.4355C0.201673 17.5596 0 17.8466 0 18.1724C0 18.6145 0.364563 18.9791 0.806694 18.9791H18.1545C18.5966 18.9791 19 18.6145 19 18.1724C19.0038 17.7303 18.6393 17.3696 18.1971 17.3696ZM10.328 16.1169H12.4262V17.3696H10.328V16.1169ZM14.0396 4.57889H15.7732V17.3696H14.0396V4.57889ZM16.5023 1.59254L15.9943 2.96547H13.7448L13.2368 1.59254H16.5023ZM12.4262 14.5035H10.328V10.3459H12.4262V14.5035ZM5.4064 5.58726C7.26412 5.58726 8.7534 7.08042 8.7534 8.93426V17.3658H2.0594V8.93426C2.0594 7.08042 3.54868 5.58726 5.4064 5.58726Z" fill="white"/>
+        </svg>
+
+        <span class="control-panel__subtitle control-panel__subtitle_link">Заводы</span>
+    </a>
+    <a href="#" class="control-panel__item">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_44_211)">
+                <path d="M11.7085 11.709C13.0202 11.709 14.0835 10.6457 14.0835 9.33398C14.0835 8.02231 13.0202 6.95898 11.7085 6.95898C10.3968 6.95898 9.3335 8.02231 9.3335 9.33398C9.3335 10.6457 10.3968 11.709 11.7085 11.709Z" fill="white"/>
+                <path d="M11.7081 11.709C9.66778 11.709 8.01367 13.3629 8.01367 15.4034H15.4025C15.4025 13.3629 13.7484 11.709 11.7081 11.709Z" fill="white"/>
+                <path d="M21.7681 20.6483L18.398 17.2782C19.6577 15.7675 20.4167 13.8255 20.4167 11.7094C20.4167 6.90766 16.5101 3.0011 11.7083 3.0011C6.90656 3.0011 3 6.9076 3 11.7094C3 16.5113 6.90656 20.4178 11.7083 20.4178C13.8251 20.4178 15.7677 19.6582 17.2786 18.3979L20.6486 21.7679C20.8032 21.9225 21.0058 21.9998 21.2083 21.9998C21.4109 21.9998 21.6136 21.9225 21.7681 21.7679C22.0773 21.4587 22.0773 20.9575 21.7681 20.6483ZM4.58333 11.7094C4.58333 7.78071 7.77961 4.58443 11.7083 4.58443C15.6371 4.58443 18.8333 7.78071 18.8333 11.7094C18.8333 15.6382 15.6371 18.8344 11.7083 18.8344C7.77961 18.8344 4.58333 15.6382 4.58333 11.7094Z" fill="white"/>
+            </g>
+            <defs>
+                <clipPath id="clip0_44_211">
+                    <rect width="19" height="19" fill="white" transform="translate(3 3)"/>
+                </clipPath>
+            </defs>
+        </svg>
+        <span class="control-panel__subtitle control-panel__subtitle_link">Люди</span>
+    </a>
+    <a href="#" class="control-panel__item">
+        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.681 10.0717L14.0586 18.0638C14.317 18.3492 14.6304 18.5793 14.9802 18.7403C15.3299 18.9012 15.7086 18.9895 16.0934 19H16.167C16.5443 18.9996 16.9177 18.9239 17.2653 18.7774C17.613 18.6308 17.9279 18.4164 18.1917 18.1466C18.4554 17.8768 18.6627 17.5571 18.8014 17.2062C18.9401 16.8553 19.0074 16.4802 18.9994 16.103C18.9904 15.7174 18.9035 15.3377 18.7439 14.9867C18.5843 14.6356 18.3553 14.3206 18.0707 14.0604L10.0774 6.68265C10.3743 5.72478 10.3854 4.70111 10.1094 3.73702C9.83347 2.77292 9.28242 1.91023 8.52377 1.2546C7.76511 0.598962 6.83177 0.178837 5.83803 0.0456678C4.8443 -0.0875014 3.83331 0.0720654 2.92886 0.504829C2.82326 0.556208 2.73149 0.632097 2.66118 0.726167C2.59087 0.820236 2.54407 0.929758 2.52468 1.0456C2.5053 1.16143 2.51389 1.28023 2.54973 1.39207C2.58558 1.50392 2.64765 1.60556 2.73076 1.68854L5.15437 4.10678L4.11231 5.1498L1.68649 2.72861C1.60317 2.64582 1.50127 2.58416 1.38928 2.54877C1.27729 2.51339 1.15846 2.50531 1.04272 2.5252C0.92697 2.5451 0.817658 2.59239 0.723905 2.66314C0.630151 2.73389 0.554675 2.82605 0.503774 2.93191C0.0714767 3.83624 -0.0876274 4.84708 0.0459653 5.84052C0.179558 6.83395 0.600043 7.76682 1.25587 8.52476C1.9117 9.2827 2.77438 9.83277 3.73816 10.1076C4.70194 10.3823 5.72493 10.3699 6.68173 10.0717H6.681ZM1.5068 4.63124L3.59239 6.71212C3.73046 6.84998 3.91758 6.92741 4.11268 6.92741C4.30777 6.92741 4.4949 6.84998 4.63297 6.71212L6.71708 4.62755C6.78555 4.55914 6.83987 4.4779 6.87693 4.38848C6.91399 4.29906 6.93307 4.20321 6.93307 4.10641C6.93307 4.00961 6.91399 3.91376 6.87693 3.82434C6.83987 3.73492 6.78555 3.65368 6.71708 3.58527L4.62781 1.50292C5.2751 1.40971 5.93554 1.49061 6.54121 1.73731C7.14688 1.984 7.67594 2.38758 8.07399 2.90656C8.47205 3.42554 8.72473 4.04119 8.80608 4.69021C8.88742 5.33924 8.79448 5.99822 8.53681 6.59942C8.47682 6.73938 8.46168 6.8945 8.49346 7.04343C8.52525 7.19236 8.6024 7.32777 8.7143 7.43103L17.0787 15.1476C17.2175 15.2727 17.3291 15.425 17.4067 15.5951C17.4842 15.7651 17.526 15.9493 17.5294 16.1361C17.5342 16.3202 17.5012 16.5033 17.4324 16.6741C17.3637 16.8449 17.2606 16.9997 17.1295 17.129C16.9984 17.2584 16.8426 17.36 16.6715 17.428C16.5003 17.4959 16.3173 17.5288 16.1331 17.5246C15.9465 17.5204 15.7627 17.4777 15.5933 17.3993C15.4239 17.3208 15.2725 17.2083 15.1485 17.0686L7.42627 8.71124C7.32283 8.59913 7.18714 8.52191 7.03795 8.49024C6.88875 8.45858 6.7334 8.47402 6.59336 8.53445C5.99303 8.79052 5.33545 8.88239 4.68795 8.80066C4.04045 8.71894 3.42629 8.46655 2.90839 8.06934C2.39048 7.67213 1.98743 7.14438 1.7405 6.54012C1.49357 5.93587 1.41165 5.27683 1.50312 4.6305L1.5068 4.63124Z" fill="white"/>
+        </svg>
+        <span class="control-panel__subtitle control-panel__subtitle_link">Техника</span>
+    </a>
+    <a href="#" class="control-panel__item">
+        <svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.7426 7.35523C19.1861 6.92833 18.0918 4.67487 18.0792 4.64909C17.7782 4.06792 17.0008 3.59511 16.3463 3.59511H14.1397V1.2794C14.1397 0.824875 13.7699 0.455078 13.3154 0.455078H0.824325C0.369797 0.455078 0 0.824875 0 1.2794V13.3789C0 13.7367 0.309297 14.0279 0.689485 14.0279H1.13032C1.25627 15.4368 2.44295 16.545 3.88427 16.545C5.12295 16.545 6.17404 15.7266 6.52506 14.6022C6.87607 15.7266 7.92711 16.545 9.16579 16.545C10.6071 16.545 11.7938 15.4368 11.9198 14.0279H13.9016C14.0276 15.4368 15.2143 16.545 16.6556 16.545C18.0969 16.545 19.2836 15.4368 19.4096 14.0279H19.7639C20.4455 14.0279 21 13.4734 21 12.7919V10.6808C21 8.5502 20.1207 7.64539 19.7426 7.35523ZM3.88427 14.8027C3.32018 14.8027 2.86131 14.3438 2.86131 13.7798C2.86131 13.2157 3.32023 12.7567 3.88427 12.7567C4.44851 12.7567 4.90758 13.2156 4.90758 13.7798C4.90758 14.3438 4.44851 14.8027 3.88427 14.8027ZM9.16579 14.8027C8.60171 14.8027 8.14283 14.3438 8.14283 13.7798C8.14283 13.2157 8.60176 12.7567 9.16579 12.7567C9.73003 12.7567 10.1891 13.2156 10.1891 13.7798C10.1891 14.3438 9.73003 14.8027 9.16579 14.8027ZM10.8328 9.08781H3.30689V3.10821H10.8328V9.08781ZM16.6556 14.8027C16.0915 14.8027 15.6326 14.3438 15.6326 13.7798C15.6326 13.2157 16.0915 12.7567 16.6556 12.7567C17.2198 12.7567 17.6789 13.2156 17.6789 13.7798C17.6789 14.3438 17.2198 14.8027 16.6556 14.8027ZM18.616 8.4207C18.5958 8.45413 18.5362 8.46872 18.4451 8.46282L14.1397 8.46257V4.61737H15.9514C16.446 4.61737 17.0562 4.98847 17.2827 5.42556L18.1197 7.12032C18.1455 7.17008 18.172 7.22069 18.1987 7.2718C18.4043 7.66432 18.7148 8.25754 18.616 8.4207Z" fill="white"/>
+        </svg>
+        <span class="control-panel__subtitle control-panel__subtitle_link">Грузоперевозки</span>
+    </a>
+    <a href="#" class="control-panel__item">
+        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.2042 2.91142H13.8885V2.06403C13.8885 1.62091 13.5231 1.25552 13.08 1.25552H10.3318V0.808511C10.3318 0.365385 9.96644 0 9.52331 0C9.08019 0 8.7148 0.365385 8.7148 0.808511V1.25164H5.96275C5.51963 1.25164 5.15424 1.61702 5.15424 2.06015V2.90753H1.79582C1.35269 2.90753 0.987305 3.27291 0.987305 3.71604V18.1915C0.987305 18.6346 1.35269 19 1.79582 19H17.243C17.6473 19 18.0127 18.6346 18.0127 18.1915V3.71993C18.0127 3.2768 17.6473 2.91142 17.2042 2.91142ZM6.77127 2.82979H12.3103V4.61007H6.77127V2.82979ZM16.4345 17.4296H2.60433V4.52844H5.15036V5.37582C5.15036 5.81894 5.51574 6.18433 5.95887 6.18433H13.0761C13.5192 6.18433 13.8846 5.81894 13.8846 5.41469V4.52844H16.4306V17.4296H16.4345Z" fill="white"/>
+        </svg>
+        <span class="control-panel__subtitle control-panel__subtitle_link">Задания</span>
+    </a>
+    <a href="#" class="control-panel__item">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.0095 14.7692L0 18V0.923077C0 0.678262 0.0948211 0.443473 0.263604 0.270363C0.432387 0.0972524 0.661305 0 0.9 0H17.1C17.3387 0 17.5676 0.0972524 17.7364 0.270363C17.9052 0.443473 18 0.678262 18 0.923077V13.8462C18 14.091 17.9052 14.3258 17.7364 14.4989C17.5676 14.672 17.3387 14.7692 17.1 14.7692H4.0095ZM1.8 14.2015L3.3867 12.9231H16.2V1.84615H1.8V14.2015ZM8.1 9.23077H9.9V11.0769H8.1V9.23077ZM8.1 3.69231H9.9V8.30769H8.1V3.69231Z" fill="white"/>
+        </svg>
+
+        <span class="control-panel__subtitle control-panel__subtitle_link">Отзывы</span>
+    </a>
+    <a href="#" class="control-panel__item">
+        <svg width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.5 10C10.39 10 11.26 9.73608 12.0001 9.24161C12.7401 8.74715 13.3169 8.04434 13.6575 7.22208C13.998 6.39981 14.0872 5.49501 13.9135 4.62209C13.7399 3.74918 13.3113 2.94736 12.682 2.31802C12.0526 1.68868 11.2508 1.2601 10.3779 1.08647C9.50499 0.912835 8.60019 1.00195 7.77792 1.34254C6.95566 1.68314 6.25285 2.25991 5.75839 2.99994C5.26392 3.73996 5 4.60999 5 5.5C5 6.69347 5.47411 7.83807 6.31802 8.68198C7.16193 9.52589 8.30652 10 9.5 10ZM9.5 2.28572C10.1357 2.28572 10.7572 2.47423 11.2858 2.82742C11.8143 3.18061 12.2263 3.68261 12.4696 4.26995C12.7129 4.85728 12.7765 5.50357 12.6525 6.12708C12.5285 6.75059 12.2224 7.32332 11.7728 7.77284C11.3233 8.22237 10.7506 8.5285 10.1271 8.65252C9.50356 8.77655 8.85728 8.71289 8.26994 8.46961C7.68261 8.22633 7.18061 7.81435 6.82742 7.28576C6.47423 6.75718 6.28571 6.13573 6.28571 5.5C6.28571 4.64752 6.62436 3.82995 7.22716 3.22716C7.82995 2.62436 8.64752 2.28572 9.5 2.28572Z" fill="white" stroke="white" stroke-width="0.5"/>
+            <path d="M17.6534 15.4507C16.6049 14.3608 15.3413 13.4926 13.9399 12.8993C12.5386 12.306 11.0289 12 9.50325 12C7.97756 12 6.4679 12.306 5.06656 12.8993C3.66522 13.4926 2.40164 14.3608 1.35308 15.4507C1.12574 15.6895 0.999485 16.0045 1 16.3317V19.714C1 20.055 1.13778 20.3821 1.38301 20.6233C1.62825 20.8645 1.96087 21 2.30769 21H16.6923C17.0391 21 17.3717 20.8645 17.617 20.6233C17.8622 20.3821 18 20.055 18 19.714V16.3317C18.0023 16.0054 17.8784 15.6905 17.6534 15.4507ZM16.6923 19.714H2.30769V16.3252C3.23434 15.3656 4.34984 14.6015 5.5863 14.0793C6.82277 13.5572 8.15434 13.2879 9.49999 13.2879C10.8456 13.2879 12.1772 13.5572 13.4137 14.0793C14.6501 14.6015 15.7656 15.3656 16.6923 16.3252V19.714Z" fill="white" stroke="white" stroke-width="0.5"/>
+        </svg>
+        <span class="control-panel__subtitle control-panel__subtitle_link">Чаты</span>
+    </a>
+
+    <div class="control-panel__column">
+        <a href="#" class="control-panel__item control-panel__item_margin">
+            <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.87868 0.87868C0 1.75736 0 3.17157 0 6V12C0 14.8284 0 16.2426 0.87868 17.1213C1.75736 18 3.17157 18 6 18H14C16.8284 18 18.2426 18 19.1213 17.1213C20 16.2426 20 14.8284 20 12V6C20 3.17157 20 1.75736 19.1213 0.87868C18.2426 0 16.8284 0 14 0H6C3.17157 0 1.75736 0 0.87868 0.87868ZM14 5C14.5523 5 15 5.44772 15 6V14C15 14.5523 14.5523 15 14 15C13.4477 15 13 14.5523 13 14V6C13 5.44772 13.4477 5 14 5ZM7 8C7 7.44772 6.55228 7 6 7C5.44772 7 5 7.44772 5 8V14C5 14.5523 5.44772 15 6 15C6.55229 15 7 14.5523 7 14V8ZM11 10C11 9.44772 10.5523 9 10 9C9.44772 9 9 9.44772 9 10V14C9 14.5523 9.44772 15 10 15C10.5523 15 11 14.5523 11 14V10Z" fill="white"/>
+            </svg>
+            <span class="control-panel__subtitle control-panel__subtitle_link">Статистика</span>
+            <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.57143 3.0664e-08L9 6.25L15.4286 1.83984e-07L18 1.25L9 10L1.04343e-07 1.25L2.57143 3.0664e-08Z" fill="#F9F9F9"/>
+            </svg>
+
+        </a>
+        <a href="#" class="control-panel__text control-panel__drop-down">
+            Общая статистика
+        </a>
+        <a href="#" class="control-panel__text control-panel__drop-down">
+            Рекламация
+        </a>
+        <a href="#" class="control-panel__text control-panel__drop-down">
+            Товары
+        </a>
+        <a href="#" class="control-panel__text control-panel__drop-down control-panel__drop-down_mb-10">
+            Услуги
+        </a>
+    </div>
+
+
+
+    <span class="control-panel__text control-panel__text_white control-panel__text_white-padding">База данных</span>
+    <a href="#" class="control-panel__item control-panel__item_different">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.7956 20.7059C17.4537 19.6427 16.7004 18.7033 15.6526 18.0332C14.6047 17.3632 13.3208 17 12 17C10.6792 17 9.3953 17.3632 8.34743 18.0332C7.29957 18.7033 6.5463 19.6427 6.20445 20.7059" stroke="white" stroke-width="2"/>
+            <circle cx="12" cy="10" r="3" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <rect x="3" y="3" width="18" height="18" rx="3" stroke="white" stroke-width="2"/>
+        </svg>
+        <span class="control-panel__subtitle control-panel__subtitle_link">Покупатели</span>
+    </a>
+    <a href="#" class="control-panel__item control-panel__item_different">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.7956 20.7059C17.4537 19.6427 16.7004 18.7033 15.6526 18.0332C14.6047 17.3632 13.3208 17 12 17C10.6792 17 9.3953 17.3632 8.34743 18.0332C7.29957 18.7033 6.5463 19.6427 6.20445 20.7059" stroke="white" stroke-width="2"/>
+            <circle cx="12" cy="10" r="3" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <rect x="3" y="3" width="18" height="18" rx="3" stroke="white" stroke-width="2"/>
+        </svg>
+        <span class="control-panel__subtitle control-panel__subtitle_link">Продавцы</span>
+    </a>
+    <a href="#" class="control-panel__item control-panel__item_different">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.7956 20.7059C17.4537 19.6427 16.7004 18.7033 15.6526 18.0332C14.6047 17.3632 13.3208 17 12 17C10.6792 17 9.3953 17.3632 8.34743 18.0332C7.29957 18.7033 6.5463 19.6427 6.20445 20.7059" stroke="white" stroke-width="2"/>
+            <circle cx="12" cy="10" r="3" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <rect x="3" y="3" width="18" height="18" rx="3" stroke="white" stroke-width="2"/>
+        </svg>
+        <span class="control-panel__subtitle control-panel__subtitle_link">Исполнители</span>
+    </a>
+    <a href="#" class="control-panel__item control-panel__item_different">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.7956 20.7059C17.4537 19.6427 16.7004 18.7033 15.6526 18.0332C14.6047 17.3632 13.3208 17 12 17C10.6792 17 9.3953 17.3632 8.34743 18.0332C7.29957 18.7033 6.5463 19.6427 6.20445 20.7059" stroke="white" stroke-width="2"/>
+            <circle cx="12" cy="10" r="3" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <rect x="3" y="3" width="18" height="18" rx="3" stroke="white" stroke-width="2"/>
+        </svg>
+        <span class="control-panel__subtitle control-panel__subtitle_link">Магазины и заводы</span>
+    </a>
+
+
+
+    <div class="control-panel__user">
+        <div class="control-panel__avatar">
+            Р
+        </div>
+        <div class="control-panel__user-info">
+                    <span class="control-panel__text control-panel__text_white control-panel__user-group">
+                        Модератор
+                    </span>
+            <span class="control-panel__text control-panel__name">Роман М.</span>
+            <a href="" class="control-panel__edit">Редактировать</a>
+        </div>
+    </div>
+</aside>
+
+<section class="content__outer">
+    <div class="content__inner">
+        <form action="" class="search">
+            <div class="search__input">
+                <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 19L13.9862 14.7425L18 19ZM16.2105 9.05263C16.2105 11.1883 15.4093 13.2365 13.983 14.7467C12.5567 16.2569 10.6223 17.1053 8.60526 17.1053C6.58822 17.1053 4.65379 16.2569 3.22753 14.7467C1.80127 13.2365 1 11.1883 1 9.05263C1 6.91694 1.80127 4.86872 3.22753 3.35856C4.65379 1.8484 6.58822 1 8.60526 1C10.6223 1 12.5567 1.8484 13.983 3.35856C15.4093 4.86872 16.2105 6.91694 16.2105 9.05263V9.05263Z" stroke="#F49613" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <input type="text" name="search" placeholder="Поиск">
+            </div>
+            <div class="filter">
+                <div class="search__select">
+                    <div class="filter__option">
+                        <span class="search__text">Фильтровать</span>
+                        <div class="search__arrow">
+                            <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.57143 3.0664e-08L9 6.25L15.4286 1.83984e-07L18 1.25L9 10L1.04343e-07 1.25L2.57143 3.0664e-08Z" fill="#ffffff"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter__inner hide">
+                    <div class="filter__edit">
+                        <span class="search__text">Цена</span>
+                        <div class="filter__row">
+                            <div class="filter__input">
+                                <input class="search__text" type="number" min="0" max="64243" value="0" id="filter__price_min">
+                                <label for="filter__price_min" class="filter__label search__text_grey">от</label>
+                            </div>
+                            <div class="filter__input">
+                                <input class="search__text" type="number" min="0" max="64243" value="64243" id="filter__price_max">
+                                <label for="filter__price_max" class="filter__label search__text_grey">до</label>
+                            </div>
+                        </div>
+                        <div class="filter__range-slider filter__price-slider"></div>
+                    </div>
+                    <div class="filter__edit">
+                        <span class="search__text">Вес, кг</span>
+                        <div class="filter__row">
+                            <div class="filter__input">
+                                <input class="search__text" type="number" min="2" max="40223" value="0" id="filter__weight_min">
+                                <label for="filter__weight_min" class="filter__label search__text_grey">от</label>
+                            </div>
+                            <div class="filter__input">
+                                <input class="search__text" type="number" min="2" max="40223" value="40223" id="filter__weight_max">
+                                <label for="filter__weight_max" class="filter__label search__text_grey">до</label>
+                            </div>
+                        </div>
+                        <div class="filter__range-slider filter__weight-slider"></div>
+                    </div>
+                    <div class="filter__row">
+                        <div class="filter__checkbox">
+                            <label for="action-product" class="search__text">Товар по акции</label>
+                            <input type="checkbox" id="action-product" >
+                            <label for="action-product" class="filter__fake-checkbox"></label>
+                        </div>
+                        <div class="filter__checkbox">
+                            <label for="high-rating" class="search__text">Высокий рейтинг</label>
+                            <input type="checkbox" id="high-rating">
+                            <label for="high-rating" class="filter__fake-checkbox"></label>
+                        </div>
+                    </div>
+                    <div class="filter__category">
+                        <span class="search__text">Категория</span>
+                        <div class="filter__subcategory">
+                            <span class="search__text">Категория 1</span>
+                            <span class="search__text">Категория 2</span>
+                            <span class="search__text">Категория 3</span>
+                            <span class="search__text">Категория 4</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="search__select search__text">
+                <select onfocus='this.size=8;' onchange="this.size=1">
+                    <option class="search__text"  disabled selected >Сортировать по</option>
+                    <option class="search__text">Популярные</option>
+                    <option class="search__text">Новинки</option>
+                    <option class="search__text">Сначала дешевые</option>
+                    <option class="search__text">Сначала дорогие</option>
+                    <option class="search__text">Сначала новые</option>
+                    <option class="search__text">Сначала старые</option>
+                    <option class="search__text">Высокий рейтинг</option>
+                </select>
+                <div class="search__arrow">
+                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.57143 3.0664e-08L9 6.25L15.4286 1.83984e-07L18 1.25L9 10L1.04343e-07 1.25L2.57143 3.0664e-08Z" fill="#ffffff"/>
+                    </svg>
+
+                </div>
+            </div>
+        </form>
+        <div class="product__row">
+            <a href="product-card.html" class="preview-product">
+                <div class="preview-product__slider">
+                    <div class="preview-product__favorite">
+                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5645 2.86902C17.2852 2.30759 16.8825 1.79882 16.379 1.3712C15.875 0.94231 15.2808 0.601475 14.6288 0.367231C13.9526 0.123371 13.2274 -0.0014504 12.4952 1.27149e-05C11.468 1.27149e-05 10.4658 0.244222 9.59485 0.705507C9.38649 0.815853 9.18855 0.937054 9.00103 1.06911C8.81351 0.937054 8.61557 0.815853 8.40721 0.705507C7.53628 0.244222 6.53408 1.27149e-05 5.50688 1.27149e-05C4.76721 1.27149e-05 4.05046 0.123022 3.3733 0.367231C2.71906 0.602396 2.12941 0.940672 1.6231 1.3712C1.11887 1.79834 0.716078 2.30723 0.43755 2.86902C0.147934 3.45332 0 4.07379 0 4.71235C0 5.31473 0.141683 5.94244 0.422965 6.58101C0.658409 7.11465 0.995947 7.66819 1.42725 8.22716C2.11066 9.11174 3.05035 10.0343 4.21715 10.9695C6.1507 12.5198 8.06551 13.5907 8.14677 13.6341L8.64057 13.9091C8.85935 14.0303 9.14063 14.0303 9.35941 13.9091L9.85321 13.6341C9.93447 13.5889 11.8472 12.5198 13.7828 10.9695C14.9496 10.0343 15.8893 9.11174 16.5727 8.22716C17.004 7.66819 17.3437 7.11465 17.577 6.58101C17.8583 5.94244 18 5.31473 18 4.71235C18.0021 4.07379 17.8541 3.45332 17.5645 2.86902ZM9.00103 12.4782C9.00103 12.4782 1.58351 8.35198 1.58351 4.71235C1.58351 2.86902 3.33997 1.37482 5.50688 1.37482C7.02997 1.37482 8.35096 2.11288 9.00103 3.19102C9.65111 2.11288 10.9721 1.37482 12.4952 1.37482C14.6621 1.37482 16.4185 2.86902 16.4185 4.71235C16.4185 8.35198 9.00103 12.4782 9.00103 12.4782Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="preview-product__sale">
+                        -35%
+                    </div>
+                    <div class="glide preview-product__glide-1">
+                        <div data-glide-el="track" class="glide__track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="preview-product__bullet">
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                                <button class="glide__bullet glide__bullet_color-2" data-glide-dir="=4"></button>
+                                <button class="glide__bullet glide__bullet_color-3" data-glide-dir="=5"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="preview-product__price">
+                    <h3 class="subtitle subtitle_preview-product__total-price">790р</h3>
+                    <span class="preview-product__old-price">1000р</span>
+                </div>
+                <span class="preview-product__text">Фанера</span>
+                <span class="preview-product__text">ламинированная простая</span>
+                <span class="preview-product__category">Стройматериалы</span>
+
+
+            </a>
+            <a href="product-card.html" class="preview-product">
+                <div class="preview-product__slider">
+                    <div class="preview-product__favorite">
+                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5645 2.86902C17.2852 2.30759 16.8825 1.79882 16.379 1.3712C15.875 0.94231 15.2808 0.601475 14.6288 0.367231C13.9526 0.123371 13.2274 -0.0014504 12.4952 1.27149e-05C11.468 1.27149e-05 10.4658 0.244222 9.59485 0.705507C9.38649 0.815853 9.18855 0.937054 9.00103 1.06911C8.81351 0.937054 8.61557 0.815853 8.40721 0.705507C7.53628 0.244222 6.53408 1.27149e-05 5.50688 1.27149e-05C4.76721 1.27149e-05 4.05046 0.123022 3.3733 0.367231C2.71906 0.602396 2.12941 0.940672 1.6231 1.3712C1.11887 1.79834 0.716078 2.30723 0.43755 2.86902C0.147934 3.45332 0 4.07379 0 4.71235C0 5.31473 0.141683 5.94244 0.422965 6.58101C0.658409 7.11465 0.995947 7.66819 1.42725 8.22716C2.11066 9.11174 3.05035 10.0343 4.21715 10.9695C6.1507 12.5198 8.06551 13.5907 8.14677 13.6341L8.64057 13.9091C8.85935 14.0303 9.14063 14.0303 9.35941 13.9091L9.85321 13.6341C9.93447 13.5889 11.8472 12.5198 13.7828 10.9695C14.9496 10.0343 15.8893 9.11174 16.5727 8.22716C17.004 7.66819 17.3437 7.11465 17.577 6.58101C17.8583 5.94244 18 5.31473 18 4.71235C18.0021 4.07379 17.8541 3.45332 17.5645 2.86902ZM9.00103 12.4782C9.00103 12.4782 1.58351 8.35198 1.58351 4.71235C1.58351 2.86902 3.33997 1.37482 5.50688 1.37482C7.02997 1.37482 8.35096 2.11288 9.00103 3.19102C9.65111 2.11288 10.9721 1.37482 12.4952 1.37482C14.6621 1.37482 16.4185 2.86902 16.4185 4.71235C16.4185 8.35198 9.00103 12.4782 9.00103 12.4782Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="preview-product__sale">
+                        -35%
+                    </div>
+                    <div class="glide preview-product__glide-1">
+                        <div data-glide-el="track" class="glide__track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="preview-product__bullet">
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                                <button class="glide__bullet glide__bullet_color-2" data-glide-dir="=4"></button>
+                                <button class="glide__bullet glide__bullet_color-3" data-glide-dir="=5"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="preview-product__price">
+                    <h3 class="subtitle subtitle_preview-product__total-price">790р</h3>
+                    <span class="preview-product__old-price">1000р</span>
+                </div>
+                <span class="preview-product__text">Фанера</span>
+                <span class="preview-product__text">ламинированная простая</span>
+                <span class="preview-product__category">Стройматериалы</span>
+
+
+            </a>
+            <a href="product-card.html" class="preview-product">
+                <div class="preview-product__slider">
+                    <div class="preview-product__favorite">
+                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5645 2.86902C17.2852 2.30759 16.8825 1.79882 16.379 1.3712C15.875 0.94231 15.2808 0.601475 14.6288 0.367231C13.9526 0.123371 13.2274 -0.0014504 12.4952 1.27149e-05C11.468 1.27149e-05 10.4658 0.244222 9.59485 0.705507C9.38649 0.815853 9.18855 0.937054 9.00103 1.06911C8.81351 0.937054 8.61557 0.815853 8.40721 0.705507C7.53628 0.244222 6.53408 1.27149e-05 5.50688 1.27149e-05C4.76721 1.27149e-05 4.05046 0.123022 3.3733 0.367231C2.71906 0.602396 2.12941 0.940672 1.6231 1.3712C1.11887 1.79834 0.716078 2.30723 0.43755 2.86902C0.147934 3.45332 0 4.07379 0 4.71235C0 5.31473 0.141683 5.94244 0.422965 6.58101C0.658409 7.11465 0.995947 7.66819 1.42725 8.22716C2.11066 9.11174 3.05035 10.0343 4.21715 10.9695C6.1507 12.5198 8.06551 13.5907 8.14677 13.6341L8.64057 13.9091C8.85935 14.0303 9.14063 14.0303 9.35941 13.9091L9.85321 13.6341C9.93447 13.5889 11.8472 12.5198 13.7828 10.9695C14.9496 10.0343 15.8893 9.11174 16.5727 8.22716C17.004 7.66819 17.3437 7.11465 17.577 6.58101C17.8583 5.94244 18 5.31473 18 4.71235C18.0021 4.07379 17.8541 3.45332 17.5645 2.86902ZM9.00103 12.4782C9.00103 12.4782 1.58351 8.35198 1.58351 4.71235C1.58351 2.86902 3.33997 1.37482 5.50688 1.37482C7.02997 1.37482 8.35096 2.11288 9.00103 3.19102C9.65111 2.11288 10.9721 1.37482 12.4952 1.37482C14.6621 1.37482 16.4185 2.86902 16.4185 4.71235C16.4185 8.35198 9.00103 12.4782 9.00103 12.4782Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="preview-product__sale">
+                        -35%
+                    </div>
+                    <div class="glide preview-product__glide-1">
+                        <div data-glide-el="track" class="glide__track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="preview-product__bullet">
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                                <button class="glide__bullet glide__bullet_color-2" data-glide-dir="=4"></button>
+                                <button class="glide__bullet glide__bullet_color-3" data-glide-dir="=5"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="preview-product__price">
+                    <h3 class="subtitle subtitle_preview-product__total-price">790р</h3>
+                    <span class="preview-product__old-price">1000р</span>
+                </div>
+                <span class="preview-product__text">Фанера</span>
+                <span class="preview-product__text">ламинированная простая</span>
+                <span class="preview-product__category">Стройматериалы</span>
+
+
+            </a>
+            <a href="product-card.html" class="preview-product">
+                <div class="preview-product__slider">
+                    <div class="preview-product__favorite">
+                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5645 2.86902C17.2852 2.30759 16.8825 1.79882 16.379 1.3712C15.875 0.94231 15.2808 0.601475 14.6288 0.367231C13.9526 0.123371 13.2274 -0.0014504 12.4952 1.27149e-05C11.468 1.27149e-05 10.4658 0.244222 9.59485 0.705507C9.38649 0.815853 9.18855 0.937054 9.00103 1.06911C8.81351 0.937054 8.61557 0.815853 8.40721 0.705507C7.53628 0.244222 6.53408 1.27149e-05 5.50688 1.27149e-05C4.76721 1.27149e-05 4.05046 0.123022 3.3733 0.367231C2.71906 0.602396 2.12941 0.940672 1.6231 1.3712C1.11887 1.79834 0.716078 2.30723 0.43755 2.86902C0.147934 3.45332 0 4.07379 0 4.71235C0 5.31473 0.141683 5.94244 0.422965 6.58101C0.658409 7.11465 0.995947 7.66819 1.42725 8.22716C2.11066 9.11174 3.05035 10.0343 4.21715 10.9695C6.1507 12.5198 8.06551 13.5907 8.14677 13.6341L8.64057 13.9091C8.85935 14.0303 9.14063 14.0303 9.35941 13.9091L9.85321 13.6341C9.93447 13.5889 11.8472 12.5198 13.7828 10.9695C14.9496 10.0343 15.8893 9.11174 16.5727 8.22716C17.004 7.66819 17.3437 7.11465 17.577 6.58101C17.8583 5.94244 18 5.31473 18 4.71235C18.0021 4.07379 17.8541 3.45332 17.5645 2.86902ZM9.00103 12.4782C9.00103 12.4782 1.58351 8.35198 1.58351 4.71235C1.58351 2.86902 3.33997 1.37482 5.50688 1.37482C7.02997 1.37482 8.35096 2.11288 9.00103 3.19102C9.65111 2.11288 10.9721 1.37482 12.4952 1.37482C14.6621 1.37482 16.4185 2.86902 16.4185 4.71235C16.4185 8.35198 9.00103 12.4782 9.00103 12.4782Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="preview-product__sale">
+                        -35%
+                    </div>
+                    <div class="glide preview-product__glide-1">
+                        <div data-glide-el="track" class="glide__track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="preview-product__bullet">
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                                <button class="glide__bullet glide__bullet_color-2" data-glide-dir="=4"></button>
+                                <button class="glide__bullet glide__bullet_color-3" data-glide-dir="=5"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="preview-product__price">
+                    <h3 class="subtitle subtitle_preview-product__total-price">790р</h3>
+                    <span class="preview-product__old-price">1000р</span>
+                </div>
+                <span class="preview-product__text">Фанера</span>
+                <span class="preview-product__text">ламинированная простая</span>
+                <span class="preview-product__category">Стройматериалы</span>
+
+
+            </a>
+            <a href="product-card.html" class="preview-product">
+                <div class="preview-product__slider">
+                    <div class="preview-product__favorite">
+                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5645 2.86902C17.2852 2.30759 16.8825 1.79882 16.379 1.3712C15.875 0.94231 15.2808 0.601475 14.6288 0.367231C13.9526 0.123371 13.2274 -0.0014504 12.4952 1.27149e-05C11.468 1.27149e-05 10.4658 0.244222 9.59485 0.705507C9.38649 0.815853 9.18855 0.937054 9.00103 1.06911C8.81351 0.937054 8.61557 0.815853 8.40721 0.705507C7.53628 0.244222 6.53408 1.27149e-05 5.50688 1.27149e-05C4.76721 1.27149e-05 4.05046 0.123022 3.3733 0.367231C2.71906 0.602396 2.12941 0.940672 1.6231 1.3712C1.11887 1.79834 0.716078 2.30723 0.43755 2.86902C0.147934 3.45332 0 4.07379 0 4.71235C0 5.31473 0.141683 5.94244 0.422965 6.58101C0.658409 7.11465 0.995947 7.66819 1.42725 8.22716C2.11066 9.11174 3.05035 10.0343 4.21715 10.9695C6.1507 12.5198 8.06551 13.5907 8.14677 13.6341L8.64057 13.9091C8.85935 14.0303 9.14063 14.0303 9.35941 13.9091L9.85321 13.6341C9.93447 13.5889 11.8472 12.5198 13.7828 10.9695C14.9496 10.0343 15.8893 9.11174 16.5727 8.22716C17.004 7.66819 17.3437 7.11465 17.577 6.58101C17.8583 5.94244 18 5.31473 18 4.71235C18.0021 4.07379 17.8541 3.45332 17.5645 2.86902ZM9.00103 12.4782C9.00103 12.4782 1.58351 8.35198 1.58351 4.71235C1.58351 2.86902 3.33997 1.37482 5.50688 1.37482C7.02997 1.37482 8.35096 2.11288 9.00103 3.19102C9.65111 2.11288 10.9721 1.37482 12.4952 1.37482C14.6621 1.37482 16.4185 2.86902 16.4185 4.71235C16.4185 8.35198 9.00103 12.4782 9.00103 12.4782Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="preview-product__sale">
+                        -35%
+                    </div>
+                    <div class="glide preview-product__glide-1">
+                        <div data-glide-el="track" class="glide__track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="preview-product__bullet">
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                                <button class="glide__bullet glide__bullet_color-2" data-glide-dir="=4"></button>
+                                <button class="glide__bullet glide__bullet_color-3" data-glide-dir="=5"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="preview-product__price">
+                    <h3 class="subtitle subtitle_preview-product__total-price">790р</h3>
+                    <span class="preview-product__old-price">1000р</span>
+                </div>
+                <span class="preview-product__text">Фанера</span>
+                <span class="preview-product__text">ламинированная простая</span>
+                <span class="preview-product__category">Стройматериалы</span>
+
+
+            </a>
+        </div>
+        <div class="product__row">
+            <a href="product-card.html" class="preview-product">
+                <div class="preview-product__slider">
+                    <div class="preview-product__favorite">
+                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5645 2.86902C17.2852 2.30759 16.8825 1.79882 16.379 1.3712C15.875 0.94231 15.2808 0.601475 14.6288 0.367231C13.9526 0.123371 13.2274 -0.0014504 12.4952 1.27149e-05C11.468 1.27149e-05 10.4658 0.244222 9.59485 0.705507C9.38649 0.815853 9.18855 0.937054 9.00103 1.06911C8.81351 0.937054 8.61557 0.815853 8.40721 0.705507C7.53628 0.244222 6.53408 1.27149e-05 5.50688 1.27149e-05C4.76721 1.27149e-05 4.05046 0.123022 3.3733 0.367231C2.71906 0.602396 2.12941 0.940672 1.6231 1.3712C1.11887 1.79834 0.716078 2.30723 0.43755 2.86902C0.147934 3.45332 0 4.07379 0 4.71235C0 5.31473 0.141683 5.94244 0.422965 6.58101C0.658409 7.11465 0.995947 7.66819 1.42725 8.22716C2.11066 9.11174 3.05035 10.0343 4.21715 10.9695C6.1507 12.5198 8.06551 13.5907 8.14677 13.6341L8.64057 13.9091C8.85935 14.0303 9.14063 14.0303 9.35941 13.9091L9.85321 13.6341C9.93447 13.5889 11.8472 12.5198 13.7828 10.9695C14.9496 10.0343 15.8893 9.11174 16.5727 8.22716C17.004 7.66819 17.3437 7.11465 17.577 6.58101C17.8583 5.94244 18 5.31473 18 4.71235C18.0021 4.07379 17.8541 3.45332 17.5645 2.86902ZM9.00103 12.4782C9.00103 12.4782 1.58351 8.35198 1.58351 4.71235C1.58351 2.86902 3.33997 1.37482 5.50688 1.37482C7.02997 1.37482 8.35096 2.11288 9.00103 3.19102C9.65111 2.11288 10.9721 1.37482 12.4952 1.37482C14.6621 1.37482 16.4185 2.86902 16.4185 4.71235C16.4185 8.35198 9.00103 12.4782 9.00103 12.4782Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="preview-product__sale">
+                        -35%
+                    </div>
+                    <div class="glide preview-product__glide-1">
+                        <div data-glide-el="track" class="glide__track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="preview-product__bullet">
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                                <button class="glide__bullet glide__bullet_color-2" data-glide-dir="=4"></button>
+                                <button class="glide__bullet glide__bullet_color-3" data-glide-dir="=5"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="preview-product__price">
+                    <h3 class="subtitle subtitle_preview-product__total-price">790р</h3>
+                    <span class="preview-product__old-price">1000р</span>
+                </div>
+                <span class="preview-product__text">Фанера</span>
+                <span class="preview-product__text">ламинированная простая</span>
+                <span class="preview-product__category">Стройматериалы</span>
+
+
+            </a>
+            <a href="product-card.html" class="preview-product">
+                <div class="preview-product__slider">
+                    <div class="preview-product__favorite">
+                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5645 2.86902C17.2852 2.30759 16.8825 1.79882 16.379 1.3712C15.875 0.94231 15.2808 0.601475 14.6288 0.367231C13.9526 0.123371 13.2274 -0.0014504 12.4952 1.27149e-05C11.468 1.27149e-05 10.4658 0.244222 9.59485 0.705507C9.38649 0.815853 9.18855 0.937054 9.00103 1.06911C8.81351 0.937054 8.61557 0.815853 8.40721 0.705507C7.53628 0.244222 6.53408 1.27149e-05 5.50688 1.27149e-05C4.76721 1.27149e-05 4.05046 0.123022 3.3733 0.367231C2.71906 0.602396 2.12941 0.940672 1.6231 1.3712C1.11887 1.79834 0.716078 2.30723 0.43755 2.86902C0.147934 3.45332 0 4.07379 0 4.71235C0 5.31473 0.141683 5.94244 0.422965 6.58101C0.658409 7.11465 0.995947 7.66819 1.42725 8.22716C2.11066 9.11174 3.05035 10.0343 4.21715 10.9695C6.1507 12.5198 8.06551 13.5907 8.14677 13.6341L8.64057 13.9091C8.85935 14.0303 9.14063 14.0303 9.35941 13.9091L9.85321 13.6341C9.93447 13.5889 11.8472 12.5198 13.7828 10.9695C14.9496 10.0343 15.8893 9.11174 16.5727 8.22716C17.004 7.66819 17.3437 7.11465 17.577 6.58101C17.8583 5.94244 18 5.31473 18 4.71235C18.0021 4.07379 17.8541 3.45332 17.5645 2.86902ZM9.00103 12.4782C9.00103 12.4782 1.58351 8.35198 1.58351 4.71235C1.58351 2.86902 3.33997 1.37482 5.50688 1.37482C7.02997 1.37482 8.35096 2.11288 9.00103 3.19102C9.65111 2.11288 10.9721 1.37482 12.4952 1.37482C14.6621 1.37482 16.4185 2.86902 16.4185 4.71235C16.4185 8.35198 9.00103 12.4782 9.00103 12.4782Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="preview-product__sale">
+                        -35%
+                    </div>
+                    <div class="glide preview-product__glide-1">
+                        <div data-glide-el="track" class="glide__track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="preview-product__bullet">
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                                <button class="glide__bullet glide__bullet_color-2" data-glide-dir="=4"></button>
+                                <button class="glide__bullet glide__bullet_color-3" data-glide-dir="=5"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="preview-product__price">
+                    <h3 class="subtitle subtitle_preview-product__total-price">790р</h3>
+                    <span class="preview-product__old-price">1000р</span>
+                </div>
+                <span class="preview-product__text">Фанера</span>
+                <span class="preview-product__text">ламинированная простая</span>
+                <span class="preview-product__category">Стройматериалы</span>
+
+
+            </a>
+            <a href="product-card.html" class="preview-product">
+                <div class="preview-product__slider">
+                    <div class="preview-product__favorite">
+                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5645 2.86902C17.2852 2.30759 16.8825 1.79882 16.379 1.3712C15.875 0.94231 15.2808 0.601475 14.6288 0.367231C13.9526 0.123371 13.2274 -0.0014504 12.4952 1.27149e-05C11.468 1.27149e-05 10.4658 0.244222 9.59485 0.705507C9.38649 0.815853 9.18855 0.937054 9.00103 1.06911C8.81351 0.937054 8.61557 0.815853 8.40721 0.705507C7.53628 0.244222 6.53408 1.27149e-05 5.50688 1.27149e-05C4.76721 1.27149e-05 4.05046 0.123022 3.3733 0.367231C2.71906 0.602396 2.12941 0.940672 1.6231 1.3712C1.11887 1.79834 0.716078 2.30723 0.43755 2.86902C0.147934 3.45332 0 4.07379 0 4.71235C0 5.31473 0.141683 5.94244 0.422965 6.58101C0.658409 7.11465 0.995947 7.66819 1.42725 8.22716C2.11066 9.11174 3.05035 10.0343 4.21715 10.9695C6.1507 12.5198 8.06551 13.5907 8.14677 13.6341L8.64057 13.9091C8.85935 14.0303 9.14063 14.0303 9.35941 13.9091L9.85321 13.6341C9.93447 13.5889 11.8472 12.5198 13.7828 10.9695C14.9496 10.0343 15.8893 9.11174 16.5727 8.22716C17.004 7.66819 17.3437 7.11465 17.577 6.58101C17.8583 5.94244 18 5.31473 18 4.71235C18.0021 4.07379 17.8541 3.45332 17.5645 2.86902ZM9.00103 12.4782C9.00103 12.4782 1.58351 8.35198 1.58351 4.71235C1.58351 2.86902 3.33997 1.37482 5.50688 1.37482C7.02997 1.37482 8.35096 2.11288 9.00103 3.19102C9.65111 2.11288 10.9721 1.37482 12.4952 1.37482C14.6621 1.37482 16.4185 2.86902 16.4185 4.71235C16.4185 8.35198 9.00103 12.4782 9.00103 12.4782Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="preview-product__sale">
+                        -35%
+                    </div>
+                    <div class="glide preview-product__glide-1">
+                        <div data-glide-el="track" class="glide__track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="preview-product__bullet">
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                                <button class="glide__bullet glide__bullet_color-2" data-glide-dir="=4"></button>
+                                <button class="glide__bullet glide__bullet_color-3" data-glide-dir="=5"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="preview-product__price">
+                    <h3 class="subtitle subtitle_preview-product__total-price">790р</h3>
+                    <span class="preview-product__old-price">1000р</span>
+                </div>
+                <span class="preview-product__text">Фанера</span>
+                <span class="preview-product__text">ламинированная простая</span>
+                <span class="preview-product__category">Стройматериалы</span>
+
+
+            </a>
+            <a href="product-card.html" class="preview-product">
+                <div class="preview-product__slider">
+                    <div class="preview-product__favorite">
+                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5645 2.86902C17.2852 2.30759 16.8825 1.79882 16.379 1.3712C15.875 0.94231 15.2808 0.601475 14.6288 0.367231C13.9526 0.123371 13.2274 -0.0014504 12.4952 1.27149e-05C11.468 1.27149e-05 10.4658 0.244222 9.59485 0.705507C9.38649 0.815853 9.18855 0.937054 9.00103 1.06911C8.81351 0.937054 8.61557 0.815853 8.40721 0.705507C7.53628 0.244222 6.53408 1.27149e-05 5.50688 1.27149e-05C4.76721 1.27149e-05 4.05046 0.123022 3.3733 0.367231C2.71906 0.602396 2.12941 0.940672 1.6231 1.3712C1.11887 1.79834 0.716078 2.30723 0.43755 2.86902C0.147934 3.45332 0 4.07379 0 4.71235C0 5.31473 0.141683 5.94244 0.422965 6.58101C0.658409 7.11465 0.995947 7.66819 1.42725 8.22716C2.11066 9.11174 3.05035 10.0343 4.21715 10.9695C6.1507 12.5198 8.06551 13.5907 8.14677 13.6341L8.64057 13.9091C8.85935 14.0303 9.14063 14.0303 9.35941 13.9091L9.85321 13.6341C9.93447 13.5889 11.8472 12.5198 13.7828 10.9695C14.9496 10.0343 15.8893 9.11174 16.5727 8.22716C17.004 7.66819 17.3437 7.11465 17.577 6.58101C17.8583 5.94244 18 5.31473 18 4.71235C18.0021 4.07379 17.8541 3.45332 17.5645 2.86902ZM9.00103 12.4782C9.00103 12.4782 1.58351 8.35198 1.58351 4.71235C1.58351 2.86902 3.33997 1.37482 5.50688 1.37482C7.02997 1.37482 8.35096 2.11288 9.00103 3.19102C9.65111 2.11288 10.9721 1.37482 12.4952 1.37482C14.6621 1.37482 16.4185 2.86902 16.4185 4.71235C16.4185 8.35198 9.00103 12.4782 9.00103 12.4782Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="preview-product__sale">
+                        -35%
+                    </div>
+                    <div class="glide preview-product__glide-1">
+                        <div data-glide-el="track" class="glide__track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="preview-product__bullet">
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                                <button class="glide__bullet glide__bullet_color-2" data-glide-dir="=4"></button>
+                                <button class="glide__bullet glide__bullet_color-3" data-glide-dir="=5"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="preview-product__price">
+                    <h3 class="subtitle subtitle_preview-product__total-price">790р</h3>
+                    <span class="preview-product__old-price">1000р</span>
+                </div>
+                <span class="preview-product__text">Фанера</span>
+                <span class="preview-product__text">ламинированная простая</span>
+                <span class="preview-product__category">Стройматериалы</span>
+
+
+            </a>
+            <a href="product-card.html" class="preview-product">
+                <div class="preview-product__slider">
+                    <div class="preview-product__favorite">
+                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5645 2.86902C17.2852 2.30759 16.8825 1.79882 16.379 1.3712C15.875 0.94231 15.2808 0.601475 14.6288 0.367231C13.9526 0.123371 13.2274 -0.0014504 12.4952 1.27149e-05C11.468 1.27149e-05 10.4658 0.244222 9.59485 0.705507C9.38649 0.815853 9.18855 0.937054 9.00103 1.06911C8.81351 0.937054 8.61557 0.815853 8.40721 0.705507C7.53628 0.244222 6.53408 1.27149e-05 5.50688 1.27149e-05C4.76721 1.27149e-05 4.05046 0.123022 3.3733 0.367231C2.71906 0.602396 2.12941 0.940672 1.6231 1.3712C1.11887 1.79834 0.716078 2.30723 0.43755 2.86902C0.147934 3.45332 0 4.07379 0 4.71235C0 5.31473 0.141683 5.94244 0.422965 6.58101C0.658409 7.11465 0.995947 7.66819 1.42725 8.22716C2.11066 9.11174 3.05035 10.0343 4.21715 10.9695C6.1507 12.5198 8.06551 13.5907 8.14677 13.6341L8.64057 13.9091C8.85935 14.0303 9.14063 14.0303 9.35941 13.9091L9.85321 13.6341C9.93447 13.5889 11.8472 12.5198 13.7828 10.9695C14.9496 10.0343 15.8893 9.11174 16.5727 8.22716C17.004 7.66819 17.3437 7.11465 17.577 6.58101C17.8583 5.94244 18 5.31473 18 4.71235C18.0021 4.07379 17.8541 3.45332 17.5645 2.86902ZM9.00103 12.4782C9.00103 12.4782 1.58351 8.35198 1.58351 4.71235C1.58351 2.86902 3.33997 1.37482 5.50688 1.37482C7.02997 1.37482 8.35096 2.11288 9.00103 3.19102C9.65111 2.11288 10.9721 1.37482 12.4952 1.37482C14.6621 1.37482 16.4185 2.86902 16.4185 4.71235C16.4185 8.35198 9.00103 12.4782 9.00103 12.4782Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="preview-product__sale">
+                        -35%
+                    </div>
+                    <div class="glide preview-product__glide-1">
+                        <div data-glide-el="track" class="glide__track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="preview-product__bullet">
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                                <button class="glide__bullet glide__bullet_color-2" data-glide-dir="=4"></button>
+                                <button class="glide__bullet glide__bullet_color-3" data-glide-dir="=5"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="preview-product__price">
+                    <h3 class="subtitle subtitle_preview-product__total-price">790р</h3>
+                    <span class="preview-product__old-price">1000р</span>
+                </div>
+                <span class="preview-product__text">Фанера</span>
+                <span class="preview-product__text">ламинированная простая</span>
+                <span class="preview-product__category">Стройматериалы</span>
+
+
+            </a>
+        </div>
+        <div class="product__row">
+            <a href="product-card.html" class="preview-product">
+                <div class="preview-product__slider">
+                    <div class="preview-product__favorite">
+                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5645 2.86902C17.2852 2.30759 16.8825 1.79882 16.379 1.3712C15.875 0.94231 15.2808 0.601475 14.6288 0.367231C13.9526 0.123371 13.2274 -0.0014504 12.4952 1.27149e-05C11.468 1.27149e-05 10.4658 0.244222 9.59485 0.705507C9.38649 0.815853 9.18855 0.937054 9.00103 1.06911C8.81351 0.937054 8.61557 0.815853 8.40721 0.705507C7.53628 0.244222 6.53408 1.27149e-05 5.50688 1.27149e-05C4.76721 1.27149e-05 4.05046 0.123022 3.3733 0.367231C2.71906 0.602396 2.12941 0.940672 1.6231 1.3712C1.11887 1.79834 0.716078 2.30723 0.43755 2.86902C0.147934 3.45332 0 4.07379 0 4.71235C0 5.31473 0.141683 5.94244 0.422965 6.58101C0.658409 7.11465 0.995947 7.66819 1.42725 8.22716C2.11066 9.11174 3.05035 10.0343 4.21715 10.9695C6.1507 12.5198 8.06551 13.5907 8.14677 13.6341L8.64057 13.9091C8.85935 14.0303 9.14063 14.0303 9.35941 13.9091L9.85321 13.6341C9.93447 13.5889 11.8472 12.5198 13.7828 10.9695C14.9496 10.0343 15.8893 9.11174 16.5727 8.22716C17.004 7.66819 17.3437 7.11465 17.577 6.58101C17.8583 5.94244 18 5.31473 18 4.71235C18.0021 4.07379 17.8541 3.45332 17.5645 2.86902ZM9.00103 12.4782C9.00103 12.4782 1.58351 8.35198 1.58351 4.71235C1.58351 2.86902 3.33997 1.37482 5.50688 1.37482C7.02997 1.37482 8.35096 2.11288 9.00103 3.19102C9.65111 2.11288 10.9721 1.37482 12.4952 1.37482C14.6621 1.37482 16.4185 2.86902 16.4185 4.71235C16.4185 8.35198 9.00103 12.4782 9.00103 12.4782Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="preview-product__sale">
+                        -35%
+                    </div>
+                    <div class="glide preview-product__glide-1">
+                        <div data-glide-el="track" class="glide__track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="preview-product__bullet">
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                                <button class="glide__bullet glide__bullet_color-2" data-glide-dir="=4"></button>
+                                <button class="glide__bullet glide__bullet_color-3" data-glide-dir="=5"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="preview-product__price">
+                    <h3 class="subtitle subtitle_preview-product__total-price">790р</h3>
+                    <span class="preview-product__old-price">1000р</span>
+                </div>
+                <span class="preview-product__text">Фанера</span>
+                <span class="preview-product__text">ламинированная простая</span>
+                <span class="preview-product__category">Стройматериалы</span>
+
+
+            </a>
+            <a href="product-card.html" class="preview-product">
+                <div class="preview-product__slider">
+                    <div class="preview-product__favorite">
+                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5645 2.86902C17.2852 2.30759 16.8825 1.79882 16.379 1.3712C15.875 0.94231 15.2808 0.601475 14.6288 0.367231C13.9526 0.123371 13.2274 -0.0014504 12.4952 1.27149e-05C11.468 1.27149e-05 10.4658 0.244222 9.59485 0.705507C9.38649 0.815853 9.18855 0.937054 9.00103 1.06911C8.81351 0.937054 8.61557 0.815853 8.40721 0.705507C7.53628 0.244222 6.53408 1.27149e-05 5.50688 1.27149e-05C4.76721 1.27149e-05 4.05046 0.123022 3.3733 0.367231C2.71906 0.602396 2.12941 0.940672 1.6231 1.3712C1.11887 1.79834 0.716078 2.30723 0.43755 2.86902C0.147934 3.45332 0 4.07379 0 4.71235C0 5.31473 0.141683 5.94244 0.422965 6.58101C0.658409 7.11465 0.995947 7.66819 1.42725 8.22716C2.11066 9.11174 3.05035 10.0343 4.21715 10.9695C6.1507 12.5198 8.06551 13.5907 8.14677 13.6341L8.64057 13.9091C8.85935 14.0303 9.14063 14.0303 9.35941 13.9091L9.85321 13.6341C9.93447 13.5889 11.8472 12.5198 13.7828 10.9695C14.9496 10.0343 15.8893 9.11174 16.5727 8.22716C17.004 7.66819 17.3437 7.11465 17.577 6.58101C17.8583 5.94244 18 5.31473 18 4.71235C18.0021 4.07379 17.8541 3.45332 17.5645 2.86902ZM9.00103 12.4782C9.00103 12.4782 1.58351 8.35198 1.58351 4.71235C1.58351 2.86902 3.33997 1.37482 5.50688 1.37482C7.02997 1.37482 8.35096 2.11288 9.00103 3.19102C9.65111 2.11288 10.9721 1.37482 12.4952 1.37482C14.6621 1.37482 16.4185 2.86902 16.4185 4.71235C16.4185 8.35198 9.00103 12.4782 9.00103 12.4782Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="preview-product__sale">
+                        -35%
+                    </div>
+                    <div class="glide preview-product__glide-1">
+                        <div data-glide-el="track" class="glide__track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="preview-product__bullet">
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                                <button class="glide__bullet glide__bullet_color-2" data-glide-dir="=4"></button>
+                                <button class="glide__bullet glide__bullet_color-3" data-glide-dir="=5"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="preview-product__price">
+                    <h3 class="subtitle subtitle_preview-product__total-price">790р</h3>
+                    <span class="preview-product__old-price">1000р</span>
+                </div>
+                <span class="preview-product__text">Фанера</span>
+                <span class="preview-product__text">ламинированная простая</span>
+                <span class="preview-product__category">Стройматериалы</span>
+
+
+            </a>
+            <a href="product-card.html" class="preview-product">
+                <div class="preview-product__slider">
+                    <div class="preview-product__favorite">
+                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5645 2.86902C17.2852 2.30759 16.8825 1.79882 16.379 1.3712C15.875 0.94231 15.2808 0.601475 14.6288 0.367231C13.9526 0.123371 13.2274 -0.0014504 12.4952 1.27149e-05C11.468 1.27149e-05 10.4658 0.244222 9.59485 0.705507C9.38649 0.815853 9.18855 0.937054 9.00103 1.06911C8.81351 0.937054 8.61557 0.815853 8.40721 0.705507C7.53628 0.244222 6.53408 1.27149e-05 5.50688 1.27149e-05C4.76721 1.27149e-05 4.05046 0.123022 3.3733 0.367231C2.71906 0.602396 2.12941 0.940672 1.6231 1.3712C1.11887 1.79834 0.716078 2.30723 0.43755 2.86902C0.147934 3.45332 0 4.07379 0 4.71235C0 5.31473 0.141683 5.94244 0.422965 6.58101C0.658409 7.11465 0.995947 7.66819 1.42725 8.22716C2.11066 9.11174 3.05035 10.0343 4.21715 10.9695C6.1507 12.5198 8.06551 13.5907 8.14677 13.6341L8.64057 13.9091C8.85935 14.0303 9.14063 14.0303 9.35941 13.9091L9.85321 13.6341C9.93447 13.5889 11.8472 12.5198 13.7828 10.9695C14.9496 10.0343 15.8893 9.11174 16.5727 8.22716C17.004 7.66819 17.3437 7.11465 17.577 6.58101C17.8583 5.94244 18 5.31473 18 4.71235C18.0021 4.07379 17.8541 3.45332 17.5645 2.86902ZM9.00103 12.4782C9.00103 12.4782 1.58351 8.35198 1.58351 4.71235C1.58351 2.86902 3.33997 1.37482 5.50688 1.37482C7.02997 1.37482 8.35096 2.11288 9.00103 3.19102C9.65111 2.11288 10.9721 1.37482 12.4952 1.37482C14.6621 1.37482 16.4185 2.86902 16.4185 4.71235C16.4185 8.35198 9.00103 12.4782 9.00103 12.4782Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="preview-product__sale">
+                        -35%
+                    </div>
+                    <div class="glide preview-product__glide-1">
+                        <div data-glide-el="track" class="glide__track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="preview-product__bullet">
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                                <button class="glide__bullet glide__bullet_color-2" data-glide-dir="=4"></button>
+                                <button class="glide__bullet glide__bullet_color-3" data-glide-dir="=5"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="preview-product__price">
+                    <h3 class="subtitle subtitle_preview-product__total-price">790р</h3>
+                    <span class="preview-product__old-price">1000р</span>
+                </div>
+                <span class="preview-product__text">Фанера</span>
+                <span class="preview-product__text">ламинированная простая</span>
+                <span class="preview-product__category">Стройматериалы</span>
+
+
+            </a>
+            <a href="product-card.html" class="preview-product">
+                <div class="preview-product__slider">
+                    <div class="preview-product__favorite">
+                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5645 2.86902C17.2852 2.30759 16.8825 1.79882 16.379 1.3712C15.875 0.94231 15.2808 0.601475 14.6288 0.367231C13.9526 0.123371 13.2274 -0.0014504 12.4952 1.27149e-05C11.468 1.27149e-05 10.4658 0.244222 9.59485 0.705507C9.38649 0.815853 9.18855 0.937054 9.00103 1.06911C8.81351 0.937054 8.61557 0.815853 8.40721 0.705507C7.53628 0.244222 6.53408 1.27149e-05 5.50688 1.27149e-05C4.76721 1.27149e-05 4.05046 0.123022 3.3733 0.367231C2.71906 0.602396 2.12941 0.940672 1.6231 1.3712C1.11887 1.79834 0.716078 2.30723 0.43755 2.86902C0.147934 3.45332 0 4.07379 0 4.71235C0 5.31473 0.141683 5.94244 0.422965 6.58101C0.658409 7.11465 0.995947 7.66819 1.42725 8.22716C2.11066 9.11174 3.05035 10.0343 4.21715 10.9695C6.1507 12.5198 8.06551 13.5907 8.14677 13.6341L8.64057 13.9091C8.85935 14.0303 9.14063 14.0303 9.35941 13.9091L9.85321 13.6341C9.93447 13.5889 11.8472 12.5198 13.7828 10.9695C14.9496 10.0343 15.8893 9.11174 16.5727 8.22716C17.004 7.66819 17.3437 7.11465 17.577 6.58101C17.8583 5.94244 18 5.31473 18 4.71235C18.0021 4.07379 17.8541 3.45332 17.5645 2.86902ZM9.00103 12.4782C9.00103 12.4782 1.58351 8.35198 1.58351 4.71235C1.58351 2.86902 3.33997 1.37482 5.50688 1.37482C7.02997 1.37482 8.35096 2.11288 9.00103 3.19102C9.65111 2.11288 10.9721 1.37482 12.4952 1.37482C14.6621 1.37482 16.4185 2.86902 16.4185 4.71235C16.4185 8.35198 9.00103 12.4782 9.00103 12.4782Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="preview-product__sale">
+                        -35%
+                    </div>
+                    <div class="glide preview-product__glide-1">
+                        <div data-glide-el="track" class="glide__track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="preview-product__bullet">
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                                <button class="glide__bullet glide__bullet_color-2" data-glide-dir="=4"></button>
+                                <button class="glide__bullet glide__bullet_color-3" data-glide-dir="=5"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="preview-product__price">
+                    <h3 class="subtitle subtitle_preview-product__total-price">790р</h3>
+                    <span class="preview-product__old-price">1000р</span>
+                </div>
+                <span class="preview-product__text">Фанера</span>
+                <span class="preview-product__text">ламинированная простая</span>
+                <span class="preview-product__category">Стройматериалы</span>
+
+
+            </a>
+            <a href="product-card.html" class="preview-product">
+                <div class="preview-product__slider">
+                    <div class="preview-product__favorite">
+                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5645 2.86902C17.2852 2.30759 16.8825 1.79882 16.379 1.3712C15.875 0.94231 15.2808 0.601475 14.6288 0.367231C13.9526 0.123371 13.2274 -0.0014504 12.4952 1.27149e-05C11.468 1.27149e-05 10.4658 0.244222 9.59485 0.705507C9.38649 0.815853 9.18855 0.937054 9.00103 1.06911C8.81351 0.937054 8.61557 0.815853 8.40721 0.705507C7.53628 0.244222 6.53408 1.27149e-05 5.50688 1.27149e-05C4.76721 1.27149e-05 4.05046 0.123022 3.3733 0.367231C2.71906 0.602396 2.12941 0.940672 1.6231 1.3712C1.11887 1.79834 0.716078 2.30723 0.43755 2.86902C0.147934 3.45332 0 4.07379 0 4.71235C0 5.31473 0.141683 5.94244 0.422965 6.58101C0.658409 7.11465 0.995947 7.66819 1.42725 8.22716C2.11066 9.11174 3.05035 10.0343 4.21715 10.9695C6.1507 12.5198 8.06551 13.5907 8.14677 13.6341L8.64057 13.9091C8.85935 14.0303 9.14063 14.0303 9.35941 13.9091L9.85321 13.6341C9.93447 13.5889 11.8472 12.5198 13.7828 10.9695C14.9496 10.0343 15.8893 9.11174 16.5727 8.22716C17.004 7.66819 17.3437 7.11465 17.577 6.58101C17.8583 5.94244 18 5.31473 18 4.71235C18.0021 4.07379 17.8541 3.45332 17.5645 2.86902ZM9.00103 12.4782C9.00103 12.4782 1.58351 8.35198 1.58351 4.71235C1.58351 2.86902 3.33997 1.37482 5.50688 1.37482C7.02997 1.37482 8.35096 2.11288 9.00103 3.19102C9.65111 2.11288 10.9721 1.37482 12.4952 1.37482C14.6621 1.37482 16.4185 2.86902 16.4185 4.71235C16.4185 8.35198 9.00103 12.4782 9.00103 12.4782Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="preview-product__sale">
+                        -35%
+                    </div>
+                    <div class="glide preview-product__glide-1">
+                        <div data-glide-el="track" class="glide__track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../../../../../image/account/fanera.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="preview-product__bullet">
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                                <button class="glide__bullet glide__bullet_color-2" data-glide-dir="=4"></button>
+                                <button class="glide__bullet glide__bullet_color-3" data-glide-dir="=5"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="preview-product__price">
+                    <h3 class="subtitle subtitle_preview-product__total-price">790р</h3>
+                    <span class="preview-product__old-price">1000р</span>
+                </div>
+                <span class="preview-product__text">Фанера</span>
+                <span class="preview-product__text">ламинированная простая</span>
+                <span class="preview-product__category">Стройматериалы</span>
+
+
+            </a>
+        </div>
+
+    </div>
+
+
+</section>
+</body>
+</html>

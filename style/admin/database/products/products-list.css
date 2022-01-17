@@ -1,0 +1,10 @@
+.orders__info {
+    max-width: 100% !important;
+}
+.orders__left {
+    text-align: left !important;
+}
+
+.orders__column {
+    justify-content: center;
+}

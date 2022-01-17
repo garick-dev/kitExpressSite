@@ -1,0 +1,6 @@
+.orders__right {
+    justify-content: space-around !important;
+}
+.orders__left {
+    text-align: left;
+}

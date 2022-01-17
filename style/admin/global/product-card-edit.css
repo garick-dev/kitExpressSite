@@ -1,0 +1,148 @@
+/*////////////////////////////////////////////////////*/
+/*//////////////////////EDIT BLOCK PRODUCT//////////////////*/
+/*////////////////////////////////////////////////////*/
+.edit {
+    max-width: 1170px;
+    width: 100%;
+    margin: 85px auto 0 auto;
+    box-sizing: border-box;
+    padding: 40px 55px;
+    box-shadow: -1px 1px 6px rgba(13, 9, 3, 0.25);
+    border-radius: 3px;
+}
+
+.edit__form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit__left {
+    max-width: 505px;
+    width: 100%;
+}
+
+.edit__input-outer {
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+}
+.edit__column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: "Montserrat-Regular", sans-serif;
+
+}
+.edit__title {
+    font-size: 18px;
+    font-weight: 600;
+}
+.edit__text{
+    margin-top: 5px;
+    font-size: 20px;
+    border: 0.5px solid #E0E0E0;
+    box-sizing: border-box;
+    padding: 10px 40px 10px 10px;
+    box-shadow: -1px 1px 2px rgba(13, 9, 3, 0.1);
+    border-radius: 3px;
+}
+.edit__text:focus {
+    outline: 0.5px solid #E0E0E0;
+}
+
+.edit__checkbox {
+    position: absolute;
+    right: 20px;
+    bottom: 8px;
+}
+
+.edit__right {
+    max-width: 510px;
+    width: 100%;
+}
+.edit__textarea-outer {
+    margin-bottom: 45px;
+}
+.edit__textarea_header {
+    display: flex;
+    justify-content: space-between;
+}
+.edit_textarea {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    resize: none;
+}
+
+.edit__button_white {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+.hide {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    left: 0;
+    top: 0;
+    z-index: -99;
+}
+
+.edit__file {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    box-shadow: -1px 1px 2px rgba(13, 9, 3, 0.1);
+    border-radius: 3px;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--orange);
+}
+.edit__file:hover {
+    cursor: pointer;
+}
+.edit__photo {
+    pointer-events: none;
+    position: absolute;
+    right: 20px;
+    bottom: 8px;
+}
+
+.edit__images {
+    display: flex;
+}
+
+.edit__single-image {
+    margin-right: 15px;
+    max-width: 80px;
+    width: 100%;
+    height: 80px;
+}
+.edit__single-image:last-of-type {
+    margin-right: 0;
+}
+.edit__single-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+.edit__wrapper {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.edit__button_orange {
+    display: inline-block;
+    font-weight: 700;
+    max-width: 520px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px 0;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: var(--orange);
+    border-radius: 3px;
+}

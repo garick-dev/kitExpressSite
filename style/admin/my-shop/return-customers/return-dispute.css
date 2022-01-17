@@ -1,0 +1,52 @@
+/*//////////////////////////////////////////
+////////////RETURN-DISPUTE/////////////////
+////////////////////////////////////////////
+ */
+.return-dispute {
+    padding-bottom: 25px;
+}
+.return-dispute__row {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.return-dispute__left {
+    max-width: 690px;
+    width: 100%;
+}
+.return-dispute__text {
+    max-width: 660px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.return-dispute__text a {
+    color: var(--orange);
+}
+
+.subtitle_return-dispute {
+    margin-top: 55px;
+    margin-bottom: 35px;
+}
+.user-block_dispute {
+    max-width: 690px;
+    width: 100%;
+    margin-bottom: 25px;
+    background: #FFFAED;
+}
+.user-block_dispute:last-of-type {
+    margin-bottom: 40px;
+}
+.button__grey_return-dispute {
+    max-width: 240px;
+    width: 100%;
+}
+
+
+
+
+
+
+

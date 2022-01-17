@@ -1,0 +1,131 @@
+/*////////////////////////////REVIEWS///////////*/
+
+.reviews__block {
+    max-width: 1170px;
+    width: 100%;
+    margin-top: 40px;
+    padding: 0;
+    background-color: #ffffff;
+    box-shadow: -1px 1px 6px rgba(13, 9, 3, 0.25);
+    border-radius: 3px;
+}
+
+.reviews__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px 50px 50px;
+}
+
+.reviews__left {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews__date {
+    font-family: "Montserrat-Regular", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #BDBDBD;
+}
+
+.reviews__user {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.reviews__avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    max-width: 50px;
+    width: 100%;
+    height: 50px;
+    background-color: #BDBDBD;
+    color: #828282;
+    font-size: 36px;
+    font-weight: 600;
+    border-radius: 50%;
+}
+
+.reviews__name {
+    font-family: "Montserrat-Regular", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.reviews__stars {
+    margin-top: 5px;
+}
+
+.reviews__description {
+    margin-top: 50px;
+}
+
+.reviews__row {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.reviews__row:first-child {
+    margin: 0;
+}
+
+.reviews__title {
+    font-family: "Montserrat-Regular", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.reviews__subtitle {
+    font-family: "Montserrat-Regular", sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+}
+.reviews__right {
+    display: flex;
+    flex-direction: column;
+    max-width: 260px;
+    width: 100%;
+}
+.reviews__image-small {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.reviews__image-large img{
+    max-width: 260px;
+    width: 100%;
+    border-radius: 3px;
+}
+.reviews__image-small img{
+    max-width: 120px;
+    width: 100%;
+    border-radius: 3px;
+}
+/*////////////////////////////REVIEWS///////////*/
+
+
+/*.reviews__header {*/
+/*    padding: 40px;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    box-shadow: -1px 1px 6px rgba(13, 9, 3, 0.25);*/
+/*    border-radius: 3px;*/
+/*}*/
+
+/*.reviews__header_left {*/
+/*    margin-right: 25px;*/
+/*    position: relative;*/
+/*}*/
+/*.reviews__header_right {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+/*.subtitle_reviews__header {*/
+/*    padding-bottom: 15px;*/
+/*}*/
+/*.subtitle_reviews__header:last-child {*/
+/*    padding-bottom: 0;*/
+/*}*/

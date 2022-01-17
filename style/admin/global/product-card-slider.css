@@ -1,0 +1,130 @@
+
+/*////////////////////////////////////////////////////*/
+/*//////////////////////PRODUCT CARD SLIDER///////////*/
+/*////////////////////////////////////////////////////*/
+.product-card__slider {
+    margin-top: -15px;
+    overflow: hidden;
+    position: relative;
+}
+.product-card__share {
+    position: absolute;
+    width: 21px;
+    height: 28px;
+    top: 32px;
+    right: 60px;
+    z-index: 5;
+}
+.product-card__share svg {
+    width: 100%;
+    height: 100%;
+}
+.product-card__favorite {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    z-index: 5;
+}
+.product-card__favorite svg {
+    width: 100%;
+    height: 100%;
+}
+
+.product-card__sale {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    max-width: 95px;
+    width: 100%;
+    bottom: 45px;
+    left: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    z-index: 5;
+    font-size: 20px;
+    line-height: 35px;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-weight: 500;
+    background: linear-gradient(90deg, #F49613 32.26%, #FBC41E 100%);
+    border-radius: 3px;
+}
+
+.product-card__price_slider {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    bottom: 42px;
+    z-index: 5;
+}
+.product-card__total-price {
+    display: inline-block;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    color: #FBC11D;
+
+}
+.product-card__old-price {
+    padding-left: 10px;
+    display: inline-block;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    color: #BDBDBD;
+    z-index: 5;
+    text-decoration: line-through;
+}
+.glide__slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.glide__slide {
+    list-style: none;
+}
+.glide__slide img{
+    width: 100%;
+    height: 415px;
+    object-fit: cover;
+    margin-left: -40px;
+    border-radius: 3px;
+}
+
+.product-card__bullet {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.glide__bullets {
+    display: flex;
+}
+.glide__bullet {
+    display: block;
+    width: 45px;
+    height: 7px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 3px;
+    background: #C5C6C6;
+}
+
+.glide__bullet_color-2 {
+    background: #D9DADA;
+}
+.glide__bullet_color-3 {
+    background: #ECECEC;
+}
+.glide__bullet:hover {
+    cursor: pointer;
+}
+.glide__bullet--active {
+    background:  #F39210;
+}
+
+.glide__bullet:not(:last-child) {
+    margin-right: 7px;
+}

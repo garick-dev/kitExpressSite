@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../style/fonts.css">
+    <link rel="stylesheet" href="../../style/normalize.css">
+    <link rel="stylesheet" href="../../style/account/header.css">
+    <link rel="stylesheet" href="../../style/account/main.css">
+
+    <script src="../../js/glide/dist/glide.min.js"></script>
+    <script src="../../js/admin/product-card.js"></script>
+    <title>Главная</title>
+</head>
+<body>
+<header class="header">
+    <div class="header__outer">
+        <div class="header__inner">
+        <div class="header__left-side">
+            <div class="logo">
+                <a href="loginMain.html">KitExpress</a>
+            </div>
+            <div class="region">
+                <span>Москва и область</span>
+                <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.57143 3.0664e-08L9 6.25L15.4286 1.83984e-07L18 1.25L9 10L1.04343e-07 1.25L2.57143 3.0664e-08Z" fill="#F9F9F9"/>
+                </svg>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div class="header__navigation">
+        <div class="header__btn-catalog">
+            <svg width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0H27V3.33333H0V0ZM0 8.33333H27V11.6667H0V8.33333ZM0 16.6667H27V20H0V16.6667Z" fill="#FBC11D"/>
+            </svg>
+            <span>Каталог</span>
+        </div>
+        <div class="header__search">
+            <form  action="" class="header__form">
+                <input type="text" name="search" id="search" placeholder="Поиск товаров и услуг">
+                <div class="header__search_icon">
+                    <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 19L13.9862 14.7425L18 19ZM16.2105 9.05263C16.2105 11.1883 15.4093 13.2365 13.983 14.7467C12.5567 16.2569 10.6223 17.1053 8.60526 17.1053C6.58822 17.1053 4.65379 16.2569 3.22753 14.7467C1.80127 13.2365 1 11.1883 1 9.05263C1 6.91694 1.80127 4.86872 3.22753 3.35856C4.65379 1.8484 6.58822 1 8.60526 1C10.6223 1 12.5567 1.8484 13.983 3.35856C15.4093 4.86872 16.2105 6.91694 16.2105 9.05263V9.05263Z" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+
+                </div>
+            </form>
+        </div>
+        <div class="header__catalog">
+            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M39.4258 0H7.38337C6.64676 0 6.01897 0.146484 5.5 0.439453C4.98103 0.732422 4.61272 1.09131 4.39509 1.51611C4.17745 1.94092 4.06864 2.40234 4.06864 2.90039V8.48145H2.31083C1.87556 8.48145 1.50725 8.62061 1.20592 8.89893C0.904576 9.17725 0.753906 9.50684 0.753906 9.8877C0.753906 10.1221 0.820871 10.3491 0.954799 10.5688C1.08873 10.7886 1.28125 10.957 1.53237 11.0742C1.78348 11.1914 2.04297 11.25 2.31083 11.25H4.06864V16.9189H2.4615C2.19364 16.9189 1.93415 16.9775 1.68304 17.0947C1.43192 17.2119 1.2394 17.3804 1.10547 17.6001C0.97154 17.8198 0.904576 18.0469 0.904576 18.2812C0.904576 18.6621 1.05525 18.9844 1.35658 19.248C1.65792 19.5117 2.02623 19.6436 2.4615 19.6436H4.06864V25.3564H2.41127C2.21038 25.3564 2.01786 25.3931 1.83371 25.4663C1.64955 25.5396 1.48214 25.6348 1.33147 25.752C1.1808 25.8691 1.06362 26.0156 0.979911 26.1914C0.896205 26.3672 0.854353 26.543 0.854353 26.7188C0.854353 27.0996 1.01339 27.4292 1.33147 27.7075C1.64955 27.9858 2.00949 28.125 2.41127 28.125H4.06864V33.75H2.41127C2.27734 33.75 2.14342 33.7646 2.00949 33.7939C1.87556 33.8232 1.75 33.8672 1.63281 33.9258C1.51562 33.9844 1.40681 34.0576 1.30636 34.1455C1.20592 34.2334 1.12221 34.3286 1.05525 34.4312C0.988281 34.5337 0.938058 34.6436 0.904576 34.7607C0.871094 34.8779 0.854353 34.9951 0.854353 35.1123C0.854353 35.4932 1.01339 35.8228 1.33147 36.1011C1.64955 36.3794 2.00949 36.5186 2.41127 36.5186H4.06864V42.1875C4.06864 43.2129 4.41183 43.938 5.09821 44.3628C5.7846 44.7876 6.52958 45 7.33315 45H39.4258C40.7651 45 41.9035 44.5898 42.841 43.7695C43.7785 42.9492 44.2472 41.9531 44.2472 40.7812V4.21875C44.2472 3.04688 43.7785 2.05078 42.841 1.23047C41.9035 0.410156 40.7651 0 39.4258 0ZM7.28292 42.1875V36.5186H8.94029C9.37556 36.5186 9.75223 36.3794 10.0703 36.1011C10.3884 35.8228 10.5474 35.4932 10.5474 35.1123C10.5474 34.9365 10.5056 34.7607 10.4219 34.585C10.3382 34.4092 10.221 34.2627 10.0703 34.1455C9.91964 34.0283 9.75223 33.9331 9.56808 33.8599C9.38393 33.7866 9.17466 33.75 8.94029 33.75H7.28292V28.125H8.94029C9.24163 28.125 9.50949 28.0591 9.74386 27.9272C9.97824 27.7954 10.1708 27.627 10.3214 27.4219C10.4721 27.2168 10.5474 26.9824 10.5474 26.7188C10.5474 26.3379 10.3884 26.0156 10.0703 25.752C9.75223 25.4883 9.37556 25.3564 8.94029 25.3564H7.28292V19.6436H8.99051C9.29185 19.6436 9.55971 19.585 9.79408 19.4678C10.0285 19.3506 10.2126 19.1895 10.3465 18.9844C10.4805 18.7793 10.5474 18.5449 10.5474 18.2812C10.5474 18.1055 10.5139 17.9297 10.447 17.7539C10.38 17.5781 10.2712 17.4316 10.1205 17.3145C9.96986 17.1973 9.80245 17.1021 9.6183 17.0288C9.43415 16.9556 9.22489 16.9189 8.99051 16.9189H7.28292V11.25H8.83984C9.27511 11.25 9.64341 11.1182 9.94475 10.8545C10.2461 10.5908 10.3968 10.2686 10.3968 9.8877C10.3968 9.50684 10.2461 9.17725 9.94475 8.89893C9.64341 8.62061 9.27511 8.48145 8.83984 8.48145H7.28292V2.8125H32.9972V42.1875H7.28292ZM41.0329 40.7812C41.0329 41.1621 40.8739 41.4917 40.5558 41.77C40.2377 42.0483 39.861 42.1875 39.4258 42.1875H36.2115V2.8125H39.4258C39.861 2.8125 40.2377 2.95166 40.5558 3.22998C40.8739 3.5083 41.0329 3.83789 41.0329 4.21875V40.7812Z" fill="#FBC11D"/>
+            </svg>
+        </div>
+        <div class="header__favorite">
+            <svg width="50" height="44" viewBox="0 0 50 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M47.9539 9.1853C47.1914 7.44431 46.092 5.86665 44.7171 4.54062C43.3413 3.21064 41.7191 2.15372 39.9388 1.42734C38.0928 0.671144 36.1128 0.284077 34.1138 0.288614C31.3094 0.288614 28.5732 1.0459 26.1954 2.47632C25.6266 2.8185 25.0862 3.19434 24.5742 3.60384C24.0623 3.19434 23.5219 2.8185 22.953 2.47632C20.5752 1.0459 17.8391 0.288614 15.0346 0.288614C13.0152 0.288614 11.0584 0.670061 9.20965 1.42734C7.42346 2.15658 5.81362 3.20556 4.43132 4.54062C3.05469 5.86515 1.955 7.44319 1.19458 9.1853C0.403882 10.9972 0 12.9212 0 14.9014C0 16.7694 0.386817 18.7159 1.15476 20.696C1.79756 22.3508 2.71909 24.0673 3.89661 25.8007C5.76243 28.5437 8.32793 31.4046 11.5135 34.3047C16.7924 39.112 22.0201 42.4329 22.242 42.5675L23.5901 43.4202C24.1874 43.796 24.9554 43.796 25.5526 43.4202L26.9008 42.5675C27.1227 42.4273 32.3447 39.112 37.6293 34.3047C40.8148 31.4046 43.3803 28.5437 45.2462 25.8007C46.4237 24.0673 47.3509 22.3508 47.988 20.696C48.7559 18.7159 49.1428 16.7694 49.1428 14.9014C49.1485 12.9212 48.7446 10.9972 47.9539 9.1853ZM24.5742 38.983C24.5742 38.983 44.5019 18.1676 44.5019 6.88123C44.5019 1.16514 9.11863 4.55184 15.0346 4.55184C19.1929 4.55184 22.7994 6.84052 24.5742 10.1838C26.349 6.84052 12.0311 13.1595 16.1894 13.1595C22.1054 13.1595 26.9008 17.7929 26.9008 23.509C26.9008 34.7953 24.5742 38.983 24.5742 38.983Z" fill="#EB5757"/>
+            </svg>
+
+        </div>
+        <div class="header__cart">
+            <svg width="52" height="51" viewBox="0 0 52 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M51.6823 13.8625C51.359 13.4045 50.9251 13.1755 50.3807 13.1755H15.7216L13.0673 4.16837C12.8291 3.35416 12.5058 2.65869 12.0975 2.08196C11.6891 1.50523 11.2553 1.09813 10.7959 0.860654C10.3365 0.623178 9.93661 0.462033 9.59632 0.37722C9.25602 0.292407 8.91573 0.25 8.57543 0.25H1.58237C1.13999 0.25 0.765664 0.402664 0.459398 0.707991C0.153133 1.01332 0 1.40346 0 1.87841C0 2.14981 0.068059 2.41273 0.204177 2.66717C0.340295 2.92161 0.535965 3.11668 0.791186 3.25238C1.04641 3.38809 1.31014 3.45594 1.58237 3.45594H8.57543C8.71155 3.45594 8.83916 3.4729 8.95826 3.50682C9.07737 3.54075 9.23901 3.68493 9.44318 3.93937C9.64736 4.19381 9.81751 4.57547 9.95363 5.08435L18.9885 38.1615C19.0565 38.365 19.1671 38.5601 19.3202 38.7467C19.4734 38.9333 19.652 39.0774 19.8562 39.1792C20.0604 39.281 20.2816 39.3319 20.5198 39.3319H42.5709C42.9112 39.3319 43.226 39.2301 43.5152 39.0266C43.8045 38.823 44.0001 38.5686 44.1022 38.2632L51.912 15.3637C52.0821 14.8209 52.0056 14.3205 51.6823 13.8625ZM41.4479 36.0751H21.7959L16.5894 16.4323H48.0326L41.4479 36.0751ZM38.2321 42.5887C37.1092 42.5887 36.1478 42.9873 35.3481 43.7846C34.5484 44.5818 34.1486 45.5402 34.1486 46.6597C34.1486 47.7793 34.5484 48.7377 35.3481 49.5349C36.1478 50.3321 37.1092 50.7308 38.2321 50.7308C39.3551 50.7308 40.3164 50.3321 41.1161 49.5349C41.9158 48.7377 42.3157 47.7793 42.3157 46.6597C42.3157 45.5402 41.9158 44.5818 41.1161 43.7846C40.3164 42.9873 39.3551 42.5887 38.2321 42.5887ZM23.5314 42.5887C22.7827 42.5887 22.0936 42.7753 21.4641 43.1485C20.8346 43.5216 20.3411 44.0136 19.9838 44.6242C19.6265 45.2349 19.4479 45.9134 19.4479 46.6597C19.4479 47.7793 19.8477 48.7377 20.6474 49.5349C21.4471 50.3321 22.4084 50.7308 23.5314 50.7308C24.6544 50.7308 25.6157 50.3321 26.4154 49.5349C27.2151 48.7377 27.6149 47.7793 27.6149 46.6597C27.6149 46.3883 27.5894 46.1169 27.5384 45.8455C27.4873 45.5741 27.4108 45.3197 27.3087 45.0822C27.2066 44.8447 27.079 44.6157 26.9258 44.3952C26.7727 44.1747 26.6026 43.9712 26.4154 43.7846C26.2282 43.598 26.0241 43.4284 25.8029 43.2757C25.5817 43.123 25.352 42.9958 25.1138 42.894C24.8756 42.7923 24.6203 42.7159 24.3481 42.665C24.0759 42.6142 23.8036 42.5887 23.5314 42.5887Z" fill="#F49613"/>
+            </svg>
+
+            <span>Пусто</span>
+        </div>
+    </div>
+</header>
+<section class="account">
+    <div class="container account__title">
+        <svg width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 3.57143L5.25 12.5L14 21.4286L12.25 25L0 12.5L12.25 0L14 3.57143Z" fill="#0D0903"/>
+        </svg>
+    <h2 class="title">
+        Личный кабинет
+    </h2>
+    </div>
+    <div class="container banner">
+        <div class="banner__inner">
+            <span class="banner__text">Регистрация прошла успешно!</span>
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.74094 26L13 15.7411L23.2591 26L26 23.2591L15.7411 13L26 2.74094L23.2591 0L13 10.2589L2.74094 0L0 2.74094L10.2589 13L0 23.2591L2.74094 26Z" fill="#0D0903"/>
+            </svg>
+
+        </div>
+    </div>
+    <div class="container profile">
+        <div class="profile__left">
+            <div class="profile__avatar">
+                МВ
+            </div>
+            <form class="profile__form_left">
+                <div class="upload">
+                    <label class="text upload__label" for="upload">
+                        Прикрепить фото
+                    </label>
+                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.12 2L13.95 4H18V16H2V4H6.05L7.88 2H12.12ZM13 0H7L5.17 2H2C0.9 2 0 2.9 0 4V16C0 17.1 0.9 18 2 18H18C19.1 18 20 17.1 20 16V4C20 2.9 19.1 2 18 2H14.83L13 0ZM10 7C11.65 7 13 8.35 13 10C13 11.65 11.65 13 10 13C8.35 13 7 11.65 7 10C7 8.35 8.35 7 10 7ZM10 5C7.24 5 5 7.24 5 10C5 12.76 7.24 15 10 15C12.76 15 15 12.76 15 10C15 7.24 12.76 5 10 5Z" fill="url(#paint0_linear_413_46560)"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_413_46560" x1="0" y1="18" x2="20" y2="18" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.322579" stop-color="#F49613"/>
+                                <stop offset="1" stop-color="#FBC41E"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                    <input class="hide" id="upload" type="file">
+                </div>
+                <div class="exit">
+                    <label class="text exit__label" for="exit">Выход из аккаунта</label>
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.8611 2.54248V4.73683L4.41031 3.34426V0.756052L5.13571 0.0527344H18.1929L18.9182 0.756052V1.43968L18.9473 1.45937V15.9336L18.425 16.5807L11.171 19.0001L10.2425 18.339V16.9324H5.13571L4.41031 16.229V13.683L5.8611 12.2764V15.5257H10.2425V3.86471L10.7213 3.21766L15.9934 1.45937H5.8611V2.54248ZM11.6933 17.3262L17.4965 15.4413V2.47215L11.6933 4.35704V17.3262ZM2.23412 9.16773H9.44457V7.76109H2.29215L4.61342 5.51048L3.58336 4.52583L-0.000102997 7.98615V8.98486L3.61238 12.4733L4.62793 11.4887L2.23412 9.16773Z" fill="black"/>
+                    </svg>
+
+                    <input class="hide" id="exit" type="submit" value="">
+                </div>
+            </form>
+        </div>
+        <div class="profile__right">
+            <h3 class="subtitle profile__subtitle">Личная информация</h3>
+            <form action="" class="profile__form_right">
+                <div class="form__input">
+                    <input type="text" id="name" class="form__input" placeholder="ФИО">
+                </div>
+                <div class="form__input">
+                    <input type="text" id="phone" class="form__input" placeholder="+7 (000) 000-00-00">
+                </div>
+                <h3 class="subtitle profile__subtitle">Адрес для доставки</h3>
+                <p class="text profile_text">
+                    Введенный адрес будет автоматически отображаться при оформление заказа
+                </p>
+                <div class="form__input">
+                    <input type="text" id="address" class="form__input" placeholder="Страна, город, улица, дом">
+                </div>
+                <div class="flex-2">
+                    <div class="form__input">
+                        <input type="text" id="room" class="form__input" placeholder="Квартира/офис">
+                    </div>
+                    <div class="form__input">
+                        <input type="text" id="index" class="form__input" placeholder="Индекс">
+                    </div>
+                </div>
+                <div class="flex-3">
+                    <div class="form__input">
+                        <input type="text" id="entrance" class="form__input" placeholder="Подъезд">
+                    </div>
+                    <div class="form__input">
+                        <input type="text" id="
+    floor" class="form__input" placeholder="Этаж">
+                    </div>
+                    <div class="form__input">
+                        <input type="text" id="intercom" class="form__input" placeholder="Домофон">
+                    </div>
+                </div>
+                    <div class="form__input">
+                        <input type="text" id="comment" class="form__input" placeholder="Комментарий курьеру">
+                    </div>
+
+            </form>
+        </div>
+    </div>
+    <div class="container tabs">
+        <div class="tabs__block tabs__block_orders">Мои заказы</div>
+        <div class="tabs__block tabs__block_reviews">Мои отзывы</div>
+        <div class="tabs__block tabs__block_faq">Справочная информация</div>
+    </div>
+    <!-- ORDERS-->
+    <div class="container order">
+        <div class="order__arrow">
+            <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.4286 14L12.5 5.25L3.57143 14L1.4608e-07 12.25L12.5 1.49061e-07L25 12.25L21.4286 14Z" fill="#0D0903"/>
+            </svg>
+        </div>
+        <div class="order__info">
+            <h3 class="subtitle order__number">Заказ №334</h3>
+            <span class="text text_order__info">Оплачено</span>
+
+        </div>
+        <div class="order__status">
+            <span class="order__subtitle">Статус:</span>
+            <span class="text text_order__status">Ожидается доставка</span>
+        </div>
+        <div class="order__delivery">
+            <div class="order__post-info">
+                <span class="order__subtitle">Доставка:</span>
+                <span class="text text_order__delivery">9 октября с 10:00 - 14:00</span>
+            </div>
+            <div class="order__post-info">
+                <span class="order__subtitle">Адрес:</span>
+                <span class="text text_order__delivery">г.Москва, Ленинский проспект 94к1, кв.3</span>
+            </div>
+        </div>
+        <div class="order__products">
+            <div class="order__item">
+                <div class="order__slider">
+                    <div class="order__favorite">
+                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5645 2.86902C17.2852 2.30759 16.8825 1.79882 16.379 1.3712C15.875 0.94231 15.2808 0.601475 14.6288 0.367231C13.9526 0.123371 13.2274 -0.0014504 12.4952 1.27149e-05C11.468 1.27149e-05 10.4658 0.244222 9.59485 0.705507C9.38649 0.815853 9.18855 0.937054 9.00103 1.06911C8.81351 0.937054 8.61557 0.815853 8.40721 0.705507C7.53628 0.244222 6.53408 1.27149e-05 5.50688 1.27149e-05C4.76721 1.27149e-05 4.05046 0.123022 3.3733 0.367231C2.71906 0.602396 2.12941 0.940672 1.6231 1.3712C1.11887 1.79834 0.716078 2.30723 0.43755 2.86902C0.147934 3.45332 0 4.07379 0 4.71235C0 5.31473 0.141683 5.94244 0.422965 6.58101C0.658409 7.11465 0.995947 7.66819 1.42725 8.22716C2.11066 9.11174 3.05035 10.0343 4.21715 10.9695C6.1507 12.5198 8.06551 13.5907 8.14677 13.6341L8.64057 13.9091C8.85935 14.0303 9.14063 14.0303 9.35941 13.9091L9.85321 13.6341C9.93447 13.5889 11.8472 12.5198 13.7828 10.9695C14.9496 10.0343 15.8893 9.11174 16.5727 8.22716C17.004 7.66819 17.3437 7.11465 17.577 6.58101C17.8583 5.94244 18 5.31473 18 4.71235C18.0021 4.07379 17.8541 3.45332 17.5645 2.86902ZM9.00103 12.4782C9.00103 12.4782 1.58351 8.35198 1.58351 4.71235C1.58351 2.86902 3.33997 1.37482 5.50688 1.37482C7.02997 1.37482 8.35096 2.11288 9.00103 3.19102C9.65111 2.11288 10.9721 1.37482 12.4952 1.37482C14.6621 1.37482 16.4185 2.86902 16.4185 4.71235C16.4185 8.35198 9.00103 12.4782 9.00103 12.4782Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="order__sale">
+                        -35%
+                    </div>
+                    <div class="glide order__glide-1">
+                        <div data-glide-el="track" class="glide__track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/fanera.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="order__bullet">
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                                <button class="glide__bullet glide__bullet_color-2" data-glide-dir="=4"></button>
+                                <button class="glide__bullet glide__bullet_color-3" data-glide-dir="=5"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="order__price">
+                    <h3 class="subtitle subtitle_order__total-price">790р</h3>
+                    <span class="order__old-price">1000р</span>
+                </div>
+                <span class="text text_order__text">Фанера</span>
+                <span class="text text_order__text">ламинированная простая</span>
+
+            </div>
+            <div class="order__item">
+                <div class="order__slider">
+                    <div class="order__favorite">
+                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5645 2.86902C17.2852 2.30759 16.8825 1.79882 16.379 1.3712C15.875 0.94231 15.2808 0.601475 14.6288 0.367231C13.9526 0.123371 13.2274 -0.0014504 12.4952 1.27149e-05C11.468 1.27149e-05 10.4658 0.244222 9.59485 0.705507C9.38649 0.815853 9.18855 0.937054 9.00103 1.06911C8.81351 0.937054 8.61557 0.815853 8.40721 0.705507C7.53628 0.244222 6.53408 1.27149e-05 5.50688 1.27149e-05C4.76721 1.27149e-05 4.05046 0.123022 3.3733 0.367231C2.71906 0.602396 2.12941 0.940672 1.6231 1.3712C1.11887 1.79834 0.716078 2.30723 0.43755 2.86902C0.147934 3.45332 0 4.07379 0 4.71235C0 5.31473 0.141683 5.94244 0.422965 6.58101C0.658409 7.11465 0.995947 7.66819 1.42725 8.22716C2.11066 9.11174 3.05035 10.0343 4.21715 10.9695C6.1507 12.5198 8.06551 13.5907 8.14677 13.6341L8.64057 13.9091C8.85935 14.0303 9.14063 14.0303 9.35941 13.9091L9.85321 13.6341C9.93447 13.5889 11.8472 12.5198 13.7828 10.9695C14.9496 10.0343 15.8893 9.11174 16.5727 8.22716C17.004 7.66819 17.3437 7.11465 17.577 6.58101C17.8583 5.94244 18 5.31473 18 4.71235C18.0021 4.07379 17.8541 3.45332 17.5645 2.86902ZM9.00103 12.4782C9.00103 12.4782 1.58351 8.35198 1.58351 4.71235C1.58351 2.86902 3.33997 1.37482 5.50688 1.37482C7.02997 1.37482 8.35096 2.11288 9.00103 3.19102C9.65111 2.11288 10.9721 1.37482 12.4952 1.37482C14.6621 1.37482 16.4185 2.86902 16.4185 4.71235C16.4185 8.35198 9.00103 12.4782 9.00103 12.4782Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="glide order__glide-2">
+                        <div data-glide-el="track" class="glide__track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="../../image/account/brick.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/brick.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/brick.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/brick.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/brick.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/brick.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="order__bullet">
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                                <button class="glide__bullet glide__bullet_color-2" data-glide-dir="=4"></button>
+                                <button class="glide__bullet glide__bullet_color-3" data-glide-dir="=5"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="order__price">
+                    <h3 class="subtitle subtitle_order__total-price">29р</h3>
+<!--                    <span class="order__old-price">1000р</span>-->
+                </div>
+                <span class="text text_order__text">Кирпич рядовой </span>
+                <span class="text text_order__text">ЛСР (РКЗ) полнотнооайа</span>
+                <span class="text text_order__amount">2 шт.</span>
+            </div>
+            <div class="order__item">
+                <div class="order__slider">
+                    <div class="order__favorite order__favorite_active">
+                        <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5645 3.35425C17.2852 2.88161 16.8825 2.4533 16.379 2.09331C15.875 1.73225 15.2808 1.44532 14.6288 1.24812C13.9526 1.04282 13.2274 0.937744 12.4952 0.938976C11.468 0.938976 10.4658 1.14456 9.59485 1.53289C9.38649 1.62579 9.18855 1.72782 9.00103 1.83899C8.81351 1.72782 8.61557 1.62579 8.40721 1.53289C7.53628 1.14456 6.53408 0.938976 5.50688 0.938976C4.76721 0.938976 4.05046 1.04253 3.3733 1.24812C2.71906 1.44609 2.12941 1.73087 1.6231 2.09331C1.11887 2.45289 0.716078 2.8813 0.43755 3.35425C0.147934 3.84613 0 4.36848 0 4.90605C0 5.41317 0.141683 5.9416 0.422965 6.47918C0.658409 6.92842 0.995947 7.39442 1.42725 7.86499C2.11066 8.60967 3.05035 9.38634 4.21715 10.1737C6.1507 11.4788 8.06551 12.3803 8.14677 12.4168L8.64057 12.6483C8.85935 12.7504 9.14063 12.7504 9.35941 12.6483L9.85321 12.4168C9.93447 12.3788 11.8472 11.4788 13.7828 10.1737C14.9496 9.38634 15.8893 8.60967 16.5727 7.86499C17.004 7.39442 17.3437 6.92842 17.577 6.47918C17.8583 5.9416 18 5.41317 18 4.90605C18.0021 4.36848 17.8541 3.84613 17.5645 3.35425ZM9.00103 11.4437C9.00103 11.4437 16.3001 5.79275 16.3001 2.72874C16.3001 1.17693 3.33997 2.09636 5.50688 2.09636C7.02997 2.09636 8.35096 2.71769 9.00103 3.62532C9.65111 2.71769 4.40676 4.43315 5.92985 4.43315C8.09676 4.43315 9.85321 5.69104 9.85321 7.24285C9.85321 10.3069 9.00103 11.4437 9.00103 11.4437Z" fill="#EB5757"/>
+                        </svg>
+
+                    </div>
+                    <div class="order__sale">
+                        -35%
+                    </div>
+                    <div class="glide order__glide-3">
+                        <div data-glide-el="track" class="glide__track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="../../image/account/tile.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/tile.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/tile.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/tile.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/tile.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/tile.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="order__bullet">
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                                <button class="glide__bullet glide__bullet_color-2" data-glide-dir="=4"></button>
+                                <button class="glide__bullet glide__bullet_color-3" data-glide-dir="=5"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="order__price">
+                    <h3 class="subtitle subtitle_order__total-price">600р</h3>
+                    <span class="order__old-price">1500р</span>
+                </div>
+                <span class="text text_order__text">Черепица гибкая</span>
+                <span class="text text_order__text">Shinglas 3 кв.м йлцолцйа</span>
+                <span class="text text_order__amount">333 шт.</span>
+            </div>
+            <div class="order__item">
+                <div class="order__slider">
+                    <div class="order__favorite order__favorite_active">
+                        <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5645 3.35425C17.2852 2.88161 16.8825 2.4533 16.379 2.09331C15.875 1.73225 15.2808 1.44532 14.6288 1.24812C13.9526 1.04282 13.2274 0.937744 12.4952 0.938976C11.468 0.938976 10.4658 1.14456 9.59485 1.53289C9.38649 1.62579 9.18855 1.72782 9.00103 1.83899C8.81351 1.72782 8.61557 1.62579 8.40721 1.53289C7.53628 1.14456 6.53408 0.938976 5.50688 0.938976C4.76721 0.938976 4.05046 1.04253 3.3733 1.24812C2.71906 1.44609 2.12941 1.73087 1.6231 2.09331C1.11887 2.45289 0.716078 2.8813 0.43755 3.35425C0.147934 3.84613 0 4.36848 0 4.90605C0 5.41317 0.141683 5.9416 0.422965 6.47918C0.658409 6.92842 0.995947 7.39442 1.42725 7.86499C2.11066 8.60967 3.05035 9.38634 4.21715 10.1737C6.1507 11.4788 8.06551 12.3803 8.14677 12.4168L8.64057 12.6483C8.85935 12.7504 9.14063 12.7504 9.35941 12.6483L9.85321 12.4168C9.93447 12.3788 11.8472 11.4788 13.7828 10.1737C14.9496 9.38634 15.8893 8.60967 16.5727 7.86499C17.004 7.39442 17.3437 6.92842 17.577 6.47918C17.8583 5.9416 18 5.41317 18 4.90605C18.0021 4.36848 17.8541 3.84613 17.5645 3.35425ZM9.00103 11.4437C9.00103 11.4437 16.3001 5.79275 16.3001 2.72874C16.3001 1.17693 3.33997 2.09636 5.50688 2.09636C7.02997 2.09636 8.35096 2.71769 9.00103 3.62532C9.65111 2.71769 4.40676 4.43315 5.92985 4.43315C8.09676 4.43315 9.85321 5.69104 9.85321 7.24285C9.85321 10.3069 9.00103 11.4437 9.00103 11.4437Z" fill="#EB5757"/>
+                        </svg>
+
+                    </div>
+                    <div class="order__sale">
+                        -35%
+                    </div>
+                    <div class="glide order__glide-3">
+                        <div data-glide-el="track" class="glide__track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="../../image/account/tile.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/tile.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/tile.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/tile.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/tile.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/tile.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="order__bullet">
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                                <button class="glide__bullet glide__bullet_color-2" data-glide-dir="=4"></button>
+                                <button class="glide__bullet glide__bullet_color-3" data-glide-dir="=5"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="order__price">
+                    <h3 class="subtitle subtitle_order__total-price">600р</h3>
+                    <span class="order__old-price">1500р</span>
+                </div>
+                <span class="text text_order__text">Черепица гибкая</span>
+                <span class="text text_order__text">Shinglas 3 кв.м йлцолцйа</span>
+                <span class="text text_order__amount">333 шт.</span>
+            </div>
+            <div class="order__item">
+                <div class="order__slider">
+                    <div class="order__favorite order__favorite_active">
+                        <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5645 3.35425C17.2852 2.88161 16.8825 2.4533 16.379 2.09331C15.875 1.73225 15.2808 1.44532 14.6288 1.24812C13.9526 1.04282 13.2274 0.937744 12.4952 0.938976C11.468 0.938976 10.4658 1.14456 9.59485 1.53289C9.38649 1.62579 9.18855 1.72782 9.00103 1.83899C8.81351 1.72782 8.61557 1.62579 8.40721 1.53289C7.53628 1.14456 6.53408 0.938976 5.50688 0.938976C4.76721 0.938976 4.05046 1.04253 3.3733 1.24812C2.71906 1.44609 2.12941 1.73087 1.6231 2.09331C1.11887 2.45289 0.716078 2.8813 0.43755 3.35425C0.147934 3.84613 0 4.36848 0 4.90605C0 5.41317 0.141683 5.9416 0.422965 6.47918C0.658409 6.92842 0.995947 7.39442 1.42725 7.86499C2.11066 8.60967 3.05035 9.38634 4.21715 10.1737C6.1507 11.4788 8.06551 12.3803 8.14677 12.4168L8.64057 12.6483C8.85935 12.7504 9.14063 12.7504 9.35941 12.6483L9.85321 12.4168C9.93447 12.3788 11.8472 11.4788 13.7828 10.1737C14.9496 9.38634 15.8893 8.60967 16.5727 7.86499C17.004 7.39442 17.3437 6.92842 17.577 6.47918C17.8583 5.9416 18 5.41317 18 4.90605C18.0021 4.36848 17.8541 3.84613 17.5645 3.35425ZM9.00103 11.4437C9.00103 11.4437 16.3001 5.79275 16.3001 2.72874C16.3001 1.17693 3.33997 2.09636 5.50688 2.09636C7.02997 2.09636 8.35096 2.71769 9.00103 3.62532C9.65111 2.71769 4.40676 4.43315 5.92985 4.43315C8.09676 4.43315 9.85321 5.69104 9.85321 7.24285C9.85321 10.3069 9.00103 11.4437 9.00103 11.4437Z" fill="#EB5757"/>
+                        </svg>
+
+                    </div>
+                    <div class="order__sale">
+                        -35%
+                    </div>
+                    <div class="glide order__glide-3">
+                        <div data-glide-el="track" class="glide__track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="../../image/account/tile.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/tile.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/tile.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/tile.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/tile.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/tile.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="order__bullet">
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                                <button class="glide__bullet glide__bullet_color-2" data-glide-dir="=4"></button>
+                                <button class="glide__bullet glide__bullet_color-3" data-glide-dir="=5"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="order__price">
+                    <h3 class="subtitle subtitle_order__total-price">600р</h3>
+                    <span class="order__old-price">1500р</span>
+                </div>
+                <span class="text text_order__text">Черепица гибкая</span>
+                <span class="text text_order__text">Shinglas 3 кв.м йлцолцйа</span>
+                <span class="text text_order__amount">333 шт.</span>
+            </div>
+        </div>
+    </div>
+    <div style="display: none" class="container order">
+        <div class="order__arrow">
+            <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.4286 14L12.5 5.25L3.57143 14L1.4608e-07 12.25L12.5 1.49061e-07L25 12.25L21.4286 14Z" fill="#0D0903"/>
+            </svg>
+        </div>
+        <div class="order__info">
+            <h3 class="subtitle order__number">Заказ №334</h3>
+            <span class="text text_order__info">Оплачено</span>
+
+        </div>
+        <div class="order__status">
+            <span class="order__subtitle">Статус:</span>
+            <span class="text text_order__status">Ожидается доставка</span>
+        </div>
+        <div class="order__delivery">
+            <div class="order__post-info">
+                <span class="order__subtitle">Доставка:</span>
+                <span class="text text_order__delivery">9 октября с 10:00 - 14:00</span>
+            </div>
+            <div class="order__post-info">
+                <span class="order__subtitle">Адрес:</span>
+                <span class="text text_order__delivery">г.Москва, Ленинский проспект 94к1, кв.3</span>
+            </div>
+        </div>
+        <div class="order__products">
+            <div class="order__item">
+                <div class="order__slider">
+                    <div class="order__favorite">
+                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5645 2.86902C17.2852 2.30759 16.8825 1.79882 16.379 1.3712C15.875 0.94231 15.2808 0.601475 14.6288 0.367231C13.9526 0.123371 13.2274 -0.0014504 12.4952 1.27149e-05C11.468 1.27149e-05 10.4658 0.244222 9.59485 0.705507C9.38649 0.815853 9.18855 0.937054 9.00103 1.06911C8.81351 0.937054 8.61557 0.815853 8.40721 0.705507C7.53628 0.244222 6.53408 1.27149e-05 5.50688 1.27149e-05C4.76721 1.27149e-05 4.05046 0.123022 3.3733 0.367231C2.71906 0.602396 2.12941 0.940672 1.6231 1.3712C1.11887 1.79834 0.716078 2.30723 0.43755 2.86902C0.147934 3.45332 0 4.07379 0 4.71235C0 5.31473 0.141683 5.94244 0.422965 6.58101C0.658409 7.11465 0.995947 7.66819 1.42725 8.22716C2.11066 9.11174 3.05035 10.0343 4.21715 10.9695C6.1507 12.5198 8.06551 13.5907 8.14677 13.6341L8.64057 13.9091C8.85935 14.0303 9.14063 14.0303 9.35941 13.9091L9.85321 13.6341C9.93447 13.5889 11.8472 12.5198 13.7828 10.9695C14.9496 10.0343 15.8893 9.11174 16.5727 8.22716C17.004 7.66819 17.3437 7.11465 17.577 6.58101C17.8583 5.94244 18 5.31473 18 4.71235C18.0021 4.07379 17.8541 3.45332 17.5645 2.86902ZM9.00103 12.4782C9.00103 12.4782 1.58351 8.35198 1.58351 4.71235C1.58351 2.86902 3.33997 1.37482 5.50688 1.37482C7.02997 1.37482 8.35096 2.11288 9.00103 3.19102C9.65111 2.11288 10.9721 1.37482 12.4952 1.37482C14.6621 1.37482 16.4185 2.86902 16.4185 4.71235C16.4185 8.35198 9.00103 12.4782 9.00103 12.4782Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="order__sale">
+                        -35%
+                    </div>
+                    <div class="glide order__glide-1">
+                        <div data-glide-el="track" class="glide__track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/fanera.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/fanera.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="order__bullet">
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                                <button class="glide__bullet glide__bullet_color-2" data-glide-dir="=4"></button>
+                                <button class="glide__bullet glide__bullet_color-3" data-glide-dir="=5"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="order__price">
+                    <h3 class="subtitle subtitle_order__total-price">790р</h3>
+                    <span class="order__old-price">1000р</span>
+                </div>
+                <span class="text text_order__text">Фанера</span>
+                <span class="text text_order__text">ламинированная простая</span>
+
+            </div>
+            <div class="order__item">
+                <div class="order__slider">
+                    <div class="order__favorite">
+                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5645 2.86902C17.2852 2.30759 16.8825 1.79882 16.379 1.3712C15.875 0.94231 15.2808 0.601475 14.6288 0.367231C13.9526 0.123371 13.2274 -0.0014504 12.4952 1.27149e-05C11.468 1.27149e-05 10.4658 0.244222 9.59485 0.705507C9.38649 0.815853 9.18855 0.937054 9.00103 1.06911C8.81351 0.937054 8.61557 0.815853 8.40721 0.705507C7.53628 0.244222 6.53408 1.27149e-05 5.50688 1.27149e-05C4.76721 1.27149e-05 4.05046 0.123022 3.3733 0.367231C2.71906 0.602396 2.12941 0.940672 1.6231 1.3712C1.11887 1.79834 0.716078 2.30723 0.43755 2.86902C0.147934 3.45332 0 4.07379 0 4.71235C0 5.31473 0.141683 5.94244 0.422965 6.58101C0.658409 7.11465 0.995947 7.66819 1.42725 8.22716C2.11066 9.11174 3.05035 10.0343 4.21715 10.9695C6.1507 12.5198 8.06551 13.5907 8.14677 13.6341L8.64057 13.9091C8.85935 14.0303 9.14063 14.0303 9.35941 13.9091L9.85321 13.6341C9.93447 13.5889 11.8472 12.5198 13.7828 10.9695C14.9496 10.0343 15.8893 9.11174 16.5727 8.22716C17.004 7.66819 17.3437 7.11465 17.577 6.58101C17.8583 5.94244 18 5.31473 18 4.71235C18.0021 4.07379 17.8541 3.45332 17.5645 2.86902ZM9.00103 12.4782C9.00103 12.4782 1.58351 8.35198 1.58351 4.71235C1.58351 2.86902 3.33997 1.37482 5.50688 1.37482C7.02997 1.37482 8.35096 2.11288 9.00103 3.19102C9.65111 2.11288 10.9721 1.37482 12.4952 1.37482C14.6621 1.37482 16.4185 2.86902 16.4185 4.71235C16.4185 8.35198 9.00103 12.4782 9.00103 12.4782Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="glide order__glide-2">
+                        <div data-glide-el="track" class="glide__track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="../../image/account/brick.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/brick.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/brick.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/brick.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/brick.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/brick.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="order__bullet">
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                                <button class="glide__bullet glide__bullet_color-2" data-glide-dir="=4"></button>
+                                <button class="glide__bullet glide__bullet_color-3" data-glide-dir="=5"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="order__price">
+                    <h3 class="subtitle subtitle_order__total-price">29р</h3>
+                    <!--                    <span class="order__old-price">1000р</span>-->
+                </div>
+                <span class="text text_order__text">Кирпич рядовой </span>
+                <span class="text text_order__text">ЛСР (РКЗ) полнотнооайа</span>
+                <span class="text text_order__amount">2 шт.</span>
+            </div>
+            <div class="order__item">
+                <div class="order__slider">
+                    <div class="order__favorite order__favorite_active">
+                        <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5645 3.35425C17.2852 2.88161 16.8825 2.4533 16.379 2.09331C15.875 1.73225 15.2808 1.44532 14.6288 1.24812C13.9526 1.04282 13.2274 0.937744 12.4952 0.938976C11.468 0.938976 10.4658 1.14456 9.59485 1.53289C9.38649 1.62579 9.18855 1.72782 9.00103 1.83899C8.81351 1.72782 8.61557 1.62579 8.40721 1.53289C7.53628 1.14456 6.53408 0.938976 5.50688 0.938976C4.76721 0.938976 4.05046 1.04253 3.3733 1.24812C2.71906 1.44609 2.12941 1.73087 1.6231 2.09331C1.11887 2.45289 0.716078 2.8813 0.43755 3.35425C0.147934 3.84613 0 4.36848 0 4.90605C0 5.41317 0.141683 5.9416 0.422965 6.47918C0.658409 6.92842 0.995947 7.39442 1.42725 7.86499C2.11066 8.60967 3.05035 9.38634 4.21715 10.1737C6.1507 11.4788 8.06551 12.3803 8.14677 12.4168L8.64057 12.6483C8.85935 12.7504 9.14063 12.7504 9.35941 12.6483L9.85321 12.4168C9.93447 12.3788 11.8472 11.4788 13.7828 10.1737C14.9496 9.38634 15.8893 8.60967 16.5727 7.86499C17.004 7.39442 17.3437 6.92842 17.577 6.47918C17.8583 5.9416 18 5.41317 18 4.90605C18.0021 4.36848 17.8541 3.84613 17.5645 3.35425ZM9.00103 11.4437C9.00103 11.4437 16.3001 5.79275 16.3001 2.72874C16.3001 1.17693 3.33997 2.09636 5.50688 2.09636C7.02997 2.09636 8.35096 2.71769 9.00103 3.62532C9.65111 2.71769 4.40676 4.43315 5.92985 4.43315C8.09676 4.43315 9.85321 5.69104 9.85321 7.24285C9.85321 10.3069 9.00103 11.4437 9.00103 11.4437Z" fill="#EB5757"/>
+                        </svg>
+
+                    </div>
+                    <div class="order__sale">
+                        -35%
+                    </div>
+                    <div class="glide order__glide-3">
+                        <div data-glide-el="track" class="glide__track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="../../image/account/tile.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/tile.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/tile.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/tile.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/tile.png" alt=""></li>
+                                <li class="glide__slide"><img src="../../image/account/tile.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="order__bullet">
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                                <button class="glide__bullet" data-glide-dir="=3"></button>
+                                <button class="glide__bullet glide__bullet_color-2" data-glide-dir="=4"></button>
+                                <button class="glide__bullet glide__bullet_color-3" data-glide-dir="=5"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="order__price">
+                    <h3 class="subtitle subtitle_order__total-price">600р</h3>
+                    <span class="order__old-price">1500р</span>
+                </div>
+                <span class="text text_order__text">Черепица гибкая</span>
+                <span class="text text_order__text">Shinglas 3 кв.м йлцолцйа</span>
+                <span class="text text_order__amount">333 шт.</span>
+            </div>
+
+        </div>
+    </div>
+    <div style="display: none" class="container order order__delivered">
+        <div class="order__arrow">
+            <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.4286 14L12.5 5.25L3.57143 14L1.4608e-07 12.25L12.5 1.49061e-07L25 12.25L21.4286 14Z" fill="#0D0903"/>
+            </svg>
+        </div>
+        <div class="order__info">
+            <h3 class="subtitle order__number">Заказ №334</h3>
+            <span class="text text_order__info">Оплачено</span>
+
+        </div>
+        <div class="order__status">
+            <span class="order__subtitle">Статус:</span>
+            <span class="text text_order__status text_order__status-delivered">Доставлен</span>
+        </div>
+    </div>
+    <!-- /ORDERS-->
+
+    <!-- /REVIEWS-->
+    <section class="reviews">
+        <div class="container banner">
+            <div class="banner__inner">
+                <span>Здесь вы видите отзывы, которые вы оставляли на товары и исполнителей</span>
+            </div>
+        </div>
+        <div class="container reviews__block">
+            <div class="reviews__header">
+                <div class="reviews__header_left">
+                    <div class="reviews__header_image">
+                        <img src="../../image/account/fanera.png" alt="">
+                    </div>
+                    <div class="order__favorite">
+                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5645 2.86902C17.2852 2.30759 16.8825 1.79882 16.379 1.3712C15.875 0.94231 15.2808 0.601475 14.6288 0.367231C13.9526 0.123371 13.2274 -0.0014504 12.4952 1.27149e-05C11.468 1.27149e-05 10.4658 0.244222 9.59485 0.705507C9.38649 0.815853 9.18855 0.937054 9.00103 1.06911C8.81351 0.937054 8.61557 0.815853 8.40721 0.705507C7.53628 0.244222 6.53408 1.27149e-05 5.50688 1.27149e-05C4.76721 1.27149e-05 4.05046 0.123022 3.3733 0.367231C2.71906 0.602396 2.12941 0.940672 1.6231 1.3712C1.11887 1.79834 0.716078 2.30723 0.43755 2.86902C0.147934 3.45332 0 4.07379 0 4.71235C0 5.31473 0.141683 5.94244 0.422965 6.58101C0.658409 7.11465 0.995947 7.66819 1.42725 8.22716C2.11066 9.11174 3.05035 10.0343 4.21715 10.9695C6.1507 12.5198 8.06551 13.5907 8.14677 13.6341L8.64057 13.9091C8.85935 14.0303 9.14063 14.0303 9.35941 13.9091L9.85321 13.6341C9.93447 13.5889 11.8472 12.5198 13.7828 10.9695C14.9496 10.0343 15.8893 9.11174 16.5727 8.22716C17.004 7.66819 17.3437 7.11465 17.577 6.58101C17.8583 5.94244 18 5.31473 18 4.71235C18.0021 4.07379 17.8541 3.45332 17.5645 2.86902ZM9.00103 12.4782C9.00103 12.4782 1.58351 8.35198 1.58351 4.71235C1.58351 2.86902 3.33997 1.37482 5.50688 1.37482C7.02997 1.37482 8.35096 2.11288 9.00103 3.19102C9.65111 2.11288 10.9721 1.37482 12.4952 1.37482C14.6621 1.37482 16.4185 2.86902 16.4185 4.71235C16.4185 8.35198 9.00103 12.4782 9.00103 12.4782Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="order__sale">
+                        -35%
+                    </div>
+                </div>
+                <div class="reviews__header_right">
+                    <span class="subtitle subtitle_reviews__header">Фанера ламинированная 21х1220х2440 мм</span>
+                </div>
+            </div>
+            <div class="reviews__content">
+                <div class="reviews__content_left">
+                    <span class="reviews__content_date">
+                        2 октября 2021
+                    </span>
+                    <div class="reviews__content_user">
+                        <div class="reviews__content_avatar">
+                            O
+                        </div>
+                        <span class="reviews__content_name">Орехов М.</span>
+                    </div>
+                    <div class="reviews__content_stars">
+                        <img src="../../image/account/stars.png" alt="">
+                    </div>
+
+                    <div class="reviews__content_description">
+                        <div class="reviews__content_row">
+                            <span class="reviews__content_title">Достоинства:</span>
+                            <span class="reviews__content_subtitle">Отличное качество, быстрая доставка</span>
+                        </div>
+                        <div class="reviews__content_row">
+                            <span class="reviews__content_title">Недостатки:</span>
+                            <span class="reviews__content_subtitle">Нет</span>
+                        </div>
+                        <div class="reviews__content_row">
+                            <span class="reviews__content_title">Комментарии:</span>
+                            <span class="reviews__content_subtitle">Все подошло, буду заказывать еще</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__content_right">
+                    <div class="reviews__content_image-large">
+                        <img src="../../image/account/firewood.png" alt="">
+                    </div>
+                    <div class="reviews__content_image-small">
+                        <img src="../../image/account/firewood.png" alt="">
+                        <img src="../../image/account/firewood.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container reviews__block">
+            <div class="reviews__header">
+                <div class="reviews__header_left">
+                    <div class="reviews__header_image">
+                        <img src="../../image/account/fanera.png" alt="">
+                    </div>
+                    <div class="order__favorite">
+                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5645 2.86902C17.2852 2.30759 16.8825 1.79882 16.379 1.3712C15.875 0.94231 15.2808 0.601475 14.6288 0.367231C13.9526 0.123371 13.2274 -0.0014504 12.4952 1.27149e-05C11.468 1.27149e-05 10.4658 0.244222 9.59485 0.705507C9.38649 0.815853 9.18855 0.937054 9.00103 1.06911C8.81351 0.937054 8.61557 0.815853 8.40721 0.705507C7.53628 0.244222 6.53408 1.27149e-05 5.50688 1.27149e-05C4.76721 1.27149e-05 4.05046 0.123022 3.3733 0.367231C2.71906 0.602396 2.12941 0.940672 1.6231 1.3712C1.11887 1.79834 0.716078 2.30723 0.43755 2.86902C0.147934 3.45332 0 4.07379 0 4.71235C0 5.31473 0.141683 5.94244 0.422965 6.58101C0.658409 7.11465 0.995947 7.66819 1.42725 8.22716C2.11066 9.11174 3.05035 10.0343 4.21715 10.9695C6.1507 12.5198 8.06551 13.5907 8.14677 13.6341L8.64057 13.9091C8.85935 14.0303 9.14063 14.0303 9.35941 13.9091L9.85321 13.6341C9.93447 13.5889 11.8472 12.5198 13.7828 10.9695C14.9496 10.0343 15.8893 9.11174 16.5727 8.22716C17.004 7.66819 17.3437 7.11465 17.577 6.58101C17.8583 5.94244 18 5.31473 18 4.71235C18.0021 4.07379 17.8541 3.45332 17.5645 2.86902ZM9.00103 12.4782C9.00103 12.4782 1.58351 8.35198 1.58351 4.71235C1.58351 2.86902 3.33997 1.37482 5.50688 1.37482C7.02997 1.37482 8.35096 2.11288 9.00103 3.19102C9.65111 2.11288 10.9721 1.37482 12.4952 1.37482C14.6621 1.37482 16.4185 2.86902 16.4185 4.71235C16.4185 8.35198 9.00103 12.4782 9.00103 12.4782Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="order__sale">
+                        -35%
+                    </div>
+                </div>
+                <div class="reviews__header_right">
+                    <span class="subtitle subtitle_reviews__header">ООО Слоники</span>
+                    <span class="subtitle subtitle_reviews__header">Компания-застройщик</span>
+                </div>
+            </div>
+            <div class="reviews__content">
+                <div class="reviews__content_left">
+                    <span class="reviews__content_date">
+                        2 октября 2021
+                    </span>
+                    <div class="reviews__content_user">
+                        <div class="reviews__content_avatar">
+                            O
+                        </div>
+                        <span class="reviews__content_name">Орехов М.</span>
+                    </div>
+                    <div class="reviews__content_stars">
+                        <img src="../../image/account/stars.png" alt="">
+                    </div>
+
+                    <div class="reviews__content_description">
+                        <div class="reviews__content_row">
+                            <span class="reviews__content_title">Достоинства:</span>
+                            <span class="reviews__content_subtitle">Отличное качество, быстрая доставка</span>
+                        </div>
+                        <div class="reviews__content_row">
+                            <span class="reviews__content_title">Недостатки:</span>
+                            <span class="reviews__content_subtitle">Нет</span>
+                        </div>
+                        <div class="reviews__content_row">
+                            <span class="reviews__content_title">Комментарии:</span>
+                            <span class="reviews__content_subtitle">Все подошло, буду заказывать еще</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__content_right">
+                    <div class="reviews__content_image-large">
+                        <img src="../../image/account/firewood.png" alt="">
+                    </div>
+                    <div class="reviews__content_image-small">
+                        <img src="../../image/account/firewood.png" alt="">
+                        <img src="../../image/account/firewood.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /REVIEWS-->
+
+    <!-- /FAQ-->
+
+    <!-- /FAQ-->
+</section>
+</body>
+</html>

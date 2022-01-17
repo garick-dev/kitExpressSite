@@ -1,0 +1,29 @@
+/*//////////////////////////////////////////
+////////////CUSTOMER CHAT////////////////
+////////////////////////////////////////////
+ */
+
+.container_customer-chat {
+    display: flex;
+    margin-top: 40px;
+
+}
+.user-block_customer-chat {
+    position: relative;
+}
+.user-block_customer-chat:not(:last-of-type) {
+    margin-bottom: 30px;
+}
+.customer-chat__left {
+    display: flex;
+    flex-direction: column;
+}
+.customer-chat__right {
+    margin-left: 40px;
+    display: flex;
+    width: 100%;
+}
+.user-block_customer-chat:hover {
+    cursor: pointer;
+    background-color: #FFFAED;
+}

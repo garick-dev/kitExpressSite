@@ -1,0 +1,28 @@
+.products_customer-card {
+    margin-top: 30px;
+}
+
+.profile__left > .button__grey {
+    max-width: 240px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/*////////////CUSTOMER CARD//////////////*/
+
+.customer-card {
+    display: flex;
+}
+
+.customer-card__buttons {
+    margin-top: 30px;
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.button__grey_customer-card {
+    margin-bottom: 20px;
+}
+.button__grey_customer-card:last-of-type {
+    margin-bottom: 0;
+}

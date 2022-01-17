@@ -1,0 +1,260 @@
+/*//////////////////////////////////////////
+///////////DELIVERY INNER////////////////
+////////////////////////////////////////////
+ */
+
+.delivery-inner {
+    padding-bottom: 370px;
+}
+
+.delivery_delivery-inner__header {
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.delivery-inner__header_right {
+    padding-right: 130px;
+}
+.delivery-inner__header_right input {
+    display: none;
+}
+.button__orange_delivery {
+    padding: 10px 25px;
+}
+.delivery_delivery-inner__bottom {
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 30px 0;
+}
+.delivery-inner__left {
+    max-width: 880px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.delivery-inner__row {
+    display: flex;
+}
+.products_delivery-inner {
+    margin-top: 30px;
+    justify-content: space-between;
+
+}
+.products_delivery-inner__left {
+    display: flex;
+    flex-direction: column;
+    max-width: 565px;
+    width: 100%;
+}
+.products_delivery-inner__left > .subtitle {
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.products_delivery-inner__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 220px;
+    width: 100%;
+}
+.products_delivery-inner__right > .delivery__post-info {
+    margin-left: 0;
+
+}
+.products_delivery-inner__right > .delivery__post-info:not(:first-of-type) {
+    margin-top: 20px;
+}
+.delivery-inner__right {
+    display: flex;
+    flex-direction: column;
+    max-width: 540px;
+    width: 100%;
+}
+.delivery-inner__buttons_row {
+    display: flex;
+    padding-top: 55px;
+    padding-right: 60px;
+
+}
+.delivery-inner__buttons_row input[type="checkbox"]{
+    display: none;
+}
+
+.button__grey_delivery-inner {
+    margin-right: 20px;
+}
+.button__grey_delivery-inner:last-child {
+    margin-right: 0;
+}
+.button__grey_send-order{
+    max-width: 225px;
+    width: 100%;
+}
+.button__grey_cancel-delivery {
+    max-width: 240px;
+    width: 100%;
+}
+
+.text_delivery-inner {
+    font-family: "Montserrat-Regular", sans-serif;
+    font-weight: 500;
+}
+/*//////////////////////////////////////////
+///////////ОТМЕНИТЬ ЗАКАЗ////////////////
+////////////////////////////////////////////
+ */
+.cancel-delivery {
+    margin-top: 50px;
+}
+.cancel-delivery__inner {
+    display: flex;
+    flex-direction: column;
+}
+.cancel-delivery__radio-buttons {
+    margin: 30px 0;
+}
+
+.cancel-delivery__input {
+    max-width: 500px;
+    width: 100%;
+}
+
+.cancel-delivery__buttons_bottom {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+}
+.button__cancel_label {
+    max-width: 115px;
+    width: 100%;
+    margin-right: 15px;
+}
+.confirm-cancel_label {
+    max-width: 365px;
+    width: 100%;
+}
+.cancel-delivery__buttons_bottom input {
+    display: none;
+}
+/*//////////////////////////////////////////
+///////////ОТПРАВИТЬ ЗАКАЗ////////////////
+////////////////////////////////////////////
+ */
+.send-order__inner {
+    margin-top: 50px;
+    max-width: 500px;
+    width: 100%;
+ }
+.send-order__row {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.send-order__row:last-of-type {
+    margin-bottom: 0;
+}
+.send-order__row label{
+    margin-right: 15px;
+}
+.send-order__row input[type="checkbox"] {
+    display: none;
+}
+.send-order__radio-buttons {
+    margin: 25px 0;
+}
+.send-order__select-date {
+    margin-top: 30px;
+}
+.button__grey_select-date {
+    margin-left: 15px;
+    max-width: 305px;
+    width: 100%;
+}
+.send-order__buttons_bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.send-order__buttons_bottom input[type="checkbox"]{
+    display: none;
+}
+.send-order__cancel_label {
+    max-width: 115px;
+    width: 100%;
+}
+.confirm-send-order_label {
+    max-width: 365px;
+    width: 100%;
+}
+.date__outer_input {
+    display: flex;
+    justify-content: center;
+}
+
+/*//////////////////////////////////////////
+///////////ОТПРАВИТЬ ЧЕРЕЗ KITEXPRESS/////////
+////////////////////////////////////////////
+ */
+.send-kitexpress__inner {
+    max-width: 520px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.send-kitexpress__row {
+    display: flex;
+    justify-content: center;
+
+}
+.text_send-kitexpress {
+    margin: 35px 0;
+}
+.button__silver_send-kitexpress__cancel {
+    max-width: 140px;
+    width: 100%;
+    margin-right: 30px;
+}
+.button__silver_send-kitexpress__confirm {
+    max-width: 230px;
+    width: 100%;
+}
+
+
+/*//////////////////////////////////////////
+///////ПРИКРЕПЛЕННЫЕ КАРТИНКИ В ДОСТАВКЕ///
+////////////////////////////////////////////
+ */
+.delivery__images {
+    display: flex;
+    overflow-x: auto;
+}
+
+.delivery__images::-webkit-scrollbar {
+    height: 15px;
+    background-color:#E0E0E0;
+    border-radius: 5px;
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.delivery__images::-webkit-scrollbar-thumb {
+    width: 15px;
+    background-color: rgb(94, 94, 94);
+    border-radius: 5px;
+}
+.delivery__image {
+    max-width: 275px;
+    width: 100%;
+    height: 200px;
+}
+.delivery__image:not(:last-of-type) {
+    margin-right: 10px;
+}
+.delivery__image img {
+    width: 275px;
+    height: 200px;
+    border-radius: 3px;
+}

@@ -1,0 +1,20 @@
+.return-dispute {
+    margin-top: 40px;
+}
+
+.return-dispute__inner {
+    margin-top: 30px;
+    display: flex;
+}
+.return-dispute__inner  > .user-block {
+    margin-right: 30px;
+}
+.return-dispute__inner  > .user-block:last-of-type {
+    margin-right: 0;
+}
+
+.user-block_return-dispute {
+    max-width: 690px;
+    width: 100%;
+    background-color: #FFFAED;
+}
